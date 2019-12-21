@@ -96,6 +96,7 @@ class ringBuf
 			}
 		}
 		
+		//Fix needed 
 		RETTYPE read(RB_TYPE** rbdest, uint32_t readsize = 0, bool manipulateIndex = false)
 		{
 			if(wmem == 0)
