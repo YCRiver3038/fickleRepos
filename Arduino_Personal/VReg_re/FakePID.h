@@ -1,7 +1,6 @@
 /*
  * FakePID.h
  * (疑似かもしれない)PID制御用の宣言・実装類
- * Author : 市川優希(ISE 15T7003L @2019/12/17)
  */
 
 #ifndef FAKEPID_HEADER_INCLUDED
