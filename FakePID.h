@@ -6,6 +6,9 @@
 #ifndef FAKEPID_HEADER_INCLUDED
 #define FAKEPID_HEADER_INCLUDED
 
+#include "stdint.h"
+#include "stdlib.h"
+
 #define GAIN_DIFF_DEFAULT 0.6f
 #define GAIN_PROP_DEFAULT 0.6f
 #define GAIN_INTEG_DEFAULT 0.0001f
