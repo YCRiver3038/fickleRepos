@@ -115,20 +115,30 @@ class SD1Device
 			sendData(uint8_t(I_ADR.ADDR_AP), I_ADR.AP.DR_U8);
 		}
 
-		void keyOn(uint8_t ch)
+		void keyOn(uint8_t tn, uint8_t fnum_H, uint8_t fnum_L)
 		{
-			
+			I_ADR.CRGD_VNO.BITSET.CRGD_VNO = tn;
+			I_ADR.CRWR2.BITSET.FNUM_H = fnum_H;
+			I_ADR.CRWR3.BITSET.FNUM = fnum_L;
+			I_ADR.CRWR4.BITSET.KEY_ON = 1;
+
+			sendData(I_ADR.ADDR_CRGD_VNO, I_ADR.CRGD_VNO.DR_U8);
+			sendData(I_ADR.ADDR_CRWR2, I_ADR.CRWR2.DR_U8);
+			sendData(I_ADR.ADDR_CRWR3, I_ADR.CRWR3.DR_U8);
+			sendData(I_ADR.ADDR_CRWR4, I_ADR.CRWR4.DR_U8);
 		}
 
 		void keyOff(uint8_t ch)
 		{
-			
+			I_ADR.CRWR4.BITSET.KEY_ON = 0;
+			sendData(I_ADR.ADDR_CRWR4, I_ADR.CRWR4.DR_U8);
 		}
 };
 
 class SD1Tone
 {
 	private:
+		uint8_t FIFO_ADDR; 
 		uint8_t toneNumber;
 		uint8_t T_ADR_HEADER;
 		uint8_t T_ADR_FOOTER[4];
@@ -138,6 +148,7 @@ class SD1Tone
 
 		SD1Tone()
 		{
+			FIFO_ADDR = 0x07;
 			toneNumber = 0;
 			TSets = nullptr;
 			T_ADR_FOOTER[0] = 0x80; 
@@ -486,6 +497,7 @@ class SD1Tone
 		void sendToneParams(SD1Device target)
 		{
 			digitalWrite(SS, LOW);
+			target.sendDataNCS(&FIFO_ADDR, 1);
 			target.sendDataNCS(&T_ADR_HEADER, 1);
 			target.sendDataNCS(TSets, (sizeof(ToneSettings)*(toneNumber+1)));
 			target.sendDataNCS(T_ADR_FOOTER, 4);
