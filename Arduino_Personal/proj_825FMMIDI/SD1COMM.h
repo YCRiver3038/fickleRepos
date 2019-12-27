@@ -128,7 +128,7 @@ class SD1Device
 			sendData(I_ADR.ADDR_CRWR4, I_ADR.CRWR4.DR_U8);
 		}
 
-		void keyOff(uint8_t ch)
+		void keyOff()
 		{
 			I_ADR.CRWR4.BITSET.KEY_ON = 0;
 			sendData(I_ADR.ADDR_CRWR4, I_ADR.CRWR4.DR_U8);
