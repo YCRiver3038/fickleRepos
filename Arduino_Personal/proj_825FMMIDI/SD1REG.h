@@ -1,7 +1,9 @@
 #ifndef SD1IFREG_HEADER_INCLUDED
 #define SD1IFREG_HEADER_INCLUDED
 
-struct
+#include "stdint.h"
+
+struct _IADRDEF
 {
 	union
 	{

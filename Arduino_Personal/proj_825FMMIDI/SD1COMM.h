@@ -57,6 +57,24 @@ class SD1Device
 			SPI.begin();
 		}
 
+		void select()
+		{
+			digitalWrite(SS, LOW);
+		}
+		void deselect()
+		{
+			digitalWrite(SS, HIGH);
+		}
+
+		void select(uint8_t devSS)
+		{
+			digitalWrite(devSS, LOW);
+		}
+		void deselect(uint8_t devSS)
+		{
+			digitalWrite(devSS, HIGH);
+		}
+
 		void sendDataNCS(void* dataBuf, uint16_t buflen)
 		{
 			SPI.transfer(dataBuf, buflen);
@@ -66,24 +84,24 @@ class SD1Device
 		{
 			dbuf[0] = addr;
 			dbuf[1] = data;
-			digitalWrite(SS, LOW);
+			select();
 			sendDataNCS(dbuf, 2);
-			digitalWrite(SS, HIGH);
+			deselect();
 		}
 
 		void sendData(uint8_t* dataBuf, uint16_t buflen)
 		{
-			digitalWrite(SS, LOW);
+			select();
 			sendDataNCS(dataBuf, buflen);
-			digitalWrite(SS, HIGH);
+			deselect();
 		}
 		
 		void readData(uint8_t addr, uint8_t* rdata)
 		{
 			dbuf16 = ((addr | 0x80)<<8);			
-			digitalWrite(SS, LOW);
+			select();
 			*rdata = uint8_t(SPI.transfer16(dbuf16) & 0x00FF);
-			digitalWrite(SS, HIGH);
+			deselect();
 		}
 		
 		void init()
@@ -163,6 +181,7 @@ class SD1Tone
 				free(TSets);
 			}
 		}
+		
 		uint8_t getToneMemory(uint8_t tnmax)
 		{
 			toneNumber = tnmax;
@@ -496,12 +515,12 @@ class SD1Tone
 
 		void sendToneParams(SD1Device target)
 		{
-			digitalWrite(SS, LOW);
+			target.select();
 			target.sendDataNCS(&FIFO_ADDR, 1);
 			target.sendDataNCS(&T_ADR_HEADER, 1);
 			target.sendDataNCS(TSets, (sizeof(ToneSettings)*(toneNumber+1)));
 			target.sendDataNCS(T_ADR_FOOTER, 4);
-			digitalWrite(SS, HIGH);
+			target.deselect();
 		}
 };
 #endif
