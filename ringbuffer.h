@@ -96,35 +96,15 @@ class ringBuf
 			}
 		}
 		
-		//Fix needed 
-		RETTYPE read(RB_TYPE** rbdest, uint32_t readsize = 0, bool manipulateIndex = false)
+		RETTYPE read(RB_TYPE** rbdest, uint32_t* topDest, uint32_t* bottomDest)
 		{
 			if(wmem == 0)
 			{   
 				return RB_EMPTY;
 			}
-			if(wmem >= readsize)
-			{
-				memcpy(*rbdest, bufDest, (sizeof(RB_TYPE) * readsize));
-				if(manipulateIndex)
-				{
-					bIndex += readsize;
-					bIndex %= bufLength;
-					wmem -= readsize;
-				}
-				return RB_ACCEPTABLE;
-			}
-			else
-			{
-				memcpy(*rbdest, bufDest, (sizeof(RB_TYPE) * wmem));
-				if(manipulateIndex)
-				{
-					bIndex += wmem;
-					bIndex %= bufLength;
-					wmem = 0;
-				}
-				return RB_ACCEPTABLE;
-			}
+			*rbdest = bufDest;
+			*topDest = tIndex;
+			*bottomDest = bIndex;
 		}
 };
 
