@@ -6,12 +6,15 @@
 
 #define TMEM_ALLOC_ERR 0xFF
 #define TMEM_ALLOC_SUCCESS 0x00
-#define RST_N_DEFAULT 9
-#define POWCTRL_DEFAULT 8
 #define SPI_SPEED_DEFAULT 8000000
+
+//---Microcontroller dependencies---
 #define SET_POWER_ON HIGH
 #define SET_POWER_OFF LOW
 #define SS_DEFAULT 10
+#define RST_N_DEFAULT 9
+#define POWCTRL_DEFAULT 8
+//---Microcontroller dependencies---
 
 const enum PARAM_NAMEDEF
 {
@@ -256,7 +259,7 @@ class SD1Tone
 			}
 		}
 
-		uint8_t setToneParams(uint8_t tNumber, OPNUMBERDEF onum, PARAM_NAMEDEF nsel, uint8_t sVal)
+		void setToneParams(uint8_t tNumber, OPNUMBERDEF onum, PARAM_NAMEDEF nsel, uint8_t sVal)
 		{
 			switch (nsel)
 			{
