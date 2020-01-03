@@ -1,3 +1,8 @@
+/*
+ * SD1REG.h
+ * SD-1(YMF825)のInterface RegisterとTone Parameter Memory Mapを構造体等に書き出したもの
+ */
+
 #ifndef SD1IFREG_HEADER_INCLUDED
 #define SD1IFREG_HEADER_INCLUDED
 
@@ -1067,38 +1072,4 @@ union ToneSettings
 		} OP4;
 	} Params;
 };
-
-const enum PARAM_NAMEDEF
-{
-	PN_BO,
-	PN_LFO,
-	PN_ALG,
-	PN_SR,
-	PN_XOF,
-	PN_KSR,
-	PN_RR,
-	PN_DR,
-	PN_AR,
-	PN_SL,
-	PN_TL,
-	PN_KSL,
-	PN_DAM,
-	PN_EAM,
-	PN_DVB,
-	PN_EVB,
-	PN_MULTI,
-	PN_DT,
-	PN_WS,
-	PN_FB,
-}paramName;
-
-const enum OPNUMBERDEF
-{
-	N_OP1,
-	N_OP2,
-	N_OP3,
-	N_OP4
-} OPs;
-
-
 #endif

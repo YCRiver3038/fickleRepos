@@ -5,22 +5,23 @@
 #include "stdlib.h"
 #include "string.h"
 
-#define RETTYPE uint8_t
-#define RB_CREATE_FAILURE (~((RETTYPE)0x0))
-#define RB_CREATE_SUCCESS ((RETTYPE)0x0)
-#define RB_FULL (~((RETTYPE)0x0)-(RETTYPE)1)
-#define RB_ACCEPTABLE ((RETTYPE)0x1)
-#define RB_EMPTY (~((RETTYPE)0x0)-(RETTYPE)2)
-
 typedef uint8_t RB_TYPE;
+typedef uint8_t RET_TYPE;
+typedef uint16_t INDEX_TYPE;
+
+#define RB_CREATE_FAILURE (~((RET_TYPE)0x0))
+#define RB_CREATE_SUCCESS ((RET_TYPE)0x0)
+#define RB_FULL (~((RET_TYPE)0x0)-(RET_TYPE)1)
+#define RB_ACCEPTABLE ((RET_TYPE)0x1)
+#define RB_EMPTY (~((RET_TYPE)0x0)-(RET_TYPE)2)
 
 class ringBuf
 {
 	private:
-		uint32_t tIndex;
-		uint32_t bIndex;
-		uint32_t wmem;
-		uint32_t bufLength;
+		INDEX_TYPE tIndex;
+		INDEX_TYPE bIndex;
+		INDEX_TYPE wmem;
+		INDEX_TYPE bufLength;
 		RB_TYPE* bufDest;
 
 	public:
@@ -38,7 +39,7 @@ class ringBuf
 			tIndex++;
 			tIndex %= bufLength;
 		}
-		void incTop(uint32_t incval)
+		void incTop(INDEX_TYPE incval)
 		{
 			tIndex += incval;
 			tIndex %= bufLength;
@@ -49,13 +50,13 @@ class ringBuf
 			bIndex++;
 			bIndex %= bufLength;
 		}
-		void incBottom(uint32_t incval)
+		void incBottom(INDEX_TYPE incval)
 		{
 			bIndex += incval;
 			bIndex %= bufLength;
 		}
 	   
-		RETTYPE create(uint32_t length)
+		RET_TYPE create(INDEX_TYPE length)
 		{
 			bufLength = length;
 			bufDest = (RB_TYPE*)calloc(length, sizeof(RB_TYPE));
@@ -66,7 +67,7 @@ class ringBuf
 			return RB_CREATE_SUCCESS;
 		}
 		
-		RETTYPE write(RB_TYPE data)
+		RET_TYPE write(RB_TYPE data)
 		{
 			if(wmem >= bufLength)
 			{
@@ -81,7 +82,7 @@ class ringBuf
 			}
 		}
 		
-		RETTYPE read(RB_TYPE* wdest)
+		RET_TYPE read(RB_TYPE* wdest)
 		{
 			if(wmem == 0)
 			{
@@ -96,7 +97,7 @@ class ringBuf
 			}
 		}
 		
-		RETTYPE read(RB_TYPE** rbdest, uint32_t* topDest, uint32_t* bottomDest)
+		RET_TYPE read(RB_TYPE** rbdest, INDEX_TYPE* topDest, INDEX_TYPE* bottomDest)
 		{
 			if(wmem == 0)
 			{   
@@ -105,6 +106,7 @@ class ringBuf
 			*rbdest = bufDest;
 			*topDest = tIndex;
 			*bottomDest = bIndex;
+			return RB_ACCEPTABLE;
 		}
 };
 

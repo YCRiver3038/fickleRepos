@@ -3,26 +3,66 @@
 
 #include "SD1REG.h"
 #include "SPI.h"
+
+#define TMEM_ALLOC_ERR 0xFF
+#define TMEM_ALLOC_SUCCESS 0x00
 #define RST_N_DEFAULT 9
 #define POWCTRL_DEFAULT 8
 #define SPI_SPEED_DEFAULT 8000000
 #define SET_POWER_ON HIGH
 #define SET_POWER_OFF LOW
-#define SS 10
-#define TMEM_ALLOC_ERR 0xFF
-#define TMEM_ALLOC_SUCCESS 0x00
+#define SS_DEFAULT 10
+
+const enum PARAM_NAMEDEF
+{
+	PN_BO,
+	PN_LFO,
+	PN_ALG,
+	PN_SR,
+	PN_XOF,
+	PN_KSR,
+	PN_RR,
+	PN_DR,
+	PN_AR,
+	PN_SL,
+	PN_TL,
+	PN_KSL,
+	PN_DAM,
+	PN_EAM,
+	PN_DVB,
+	PN_EVB,
+	PN_MULTI,
+	PN_DT,
+	PN_WS,
+	PN_FB,
+}paramName;
+
+const enum OPNUMBERDEF
+{
+	N_OP1,
+	N_OP2,
+	N_OP3,
+	N_OP4
+} OPs;
 
 class SD1Device
 {
 	private:
-		uint8_t RST_N;
 		uint8_t dbuf[2];
 		uint8_t rcvbuf;
-		uint8_t POWCTRL;
 		uint16_t dbuf16;
-		
-		void setPins()
+
+//---Microcontroller dependencies---
+		uint8_t RST_N;
+		uint8_t POWCTRL;
+		uint8_t devSS;
+
+		void setPins(uint8_t NRST, uint8_t PCTRL, uint8_t SSEL)
 		{
+			RST_N = NRST;
+			POWCTRL = PCTRL;
+			devSS = SSEL;
+
 			if(RST_N > 9)
 			{
 				RST_N = 9;
@@ -33,44 +73,53 @@ class SD1Device
 			}
 			pinMode(POWCTRL, OUTPUT);
 			pinMode(RST_N, OUTPUT);
-			pinMode(SS, OUTPUT);
+			pinMode(devSS, OUTPUT);
 			digitalWrite(RST_N, LOW);
 			digitalWrite(POWCTRL, SET_POWER_OFF);
+		}
+
+		void msWait(uint16_t wsec)
+		{
+			delay(wsec);
+		}
+		void usWait(uint16_t wsec)
+		{
+			delayMicroseconds(wsec);
+		}
+		void dev_reset()
+		{
+			digitalWrite(RST_N, LOW);
+		}
+		void dev_nreset()
+		{
+			digitalWrite(RST_N, HIGH);
+		}
+		void dev_powerON()
+		{
+			digitalWrite(POWCTRL, SET_POWER_ON);
 		}
 
 	public:
 		SD1Device()
 		{
-			RST_N = RST_N_DEFAULT;
-			POWCTRL = POWCTRL_DEFAULT;
-			setPins();
+			setPins(RST_N_DEFAULT, POWCTRL_DEFAULT, SS_DEFAULT);
 			SPI.beginTransaction(SPISettings(SPI_SPEED_DEFAULT, MSBFIRST, SPI_MODE0));
 			SPI.begin();
 		}
 		
-		SD1Device(uint8_t P_RST_N, uint8_t P_POWCTRL, uint32_t transSpeed)
+		SD1Device(uint8_t P_RST_N, uint8_t P_POWCTRL, uint8_t SS_Using, uint32_t transSpeed)
 		{
-			RST_N = P_RST_N;
-			POWCTRL = P_POWCTRL;
-			setPins();
+			setPins(P_RST_N, P_POWCTRL, SS_Using);
 			SPI.beginTransaction(SPISettings(transSpeed, MSBFIRST, SPI_MODE0));
 			SPI.begin();
 		}
 
 		void select()
 		{
-			digitalWrite(SS, LOW);
-		}
-		void deselect()
-		{
-			digitalWrite(SS, HIGH);
-		}
-
-		void select(uint8_t devSS)
-		{
 			digitalWrite(devSS, LOW);
 		}
-		void deselect(uint8_t devSS)
+
+		void deselect()
 		{
 			digitalWrite(devSS, HIGH);
 		}
@@ -79,7 +128,8 @@ class SD1Device
 		{
 			SPI.transfer(dataBuf, buflen);
 		}
-		
+//---Microcontroller dependencies---
+
 		void sendData(uint8_t addr, uint8_t data)
 		{
 			dbuf[0] = addr;
@@ -98,24 +148,24 @@ class SD1Device
 		
 		void readData(uint8_t addr, uint8_t* rdata)
 		{
-			dbuf16 = ((addr | 0x80)<<8);			
+			dbuf16 = ((addr | 0x80)<<8);
 			select();
-			*rdata = uint8_t(SPI.transfer16(dbuf16) & 0x00FF);
+			*rdata = (uint8_t)(SPI.transfer16(dbuf16) & 0x00FF);
 			deselect();
 		}
 		
 		void init()
 		{
-			digitalWrite(RST_N, LOW);
-			digitalWrite(POWCTRL, SET_POWER_ON);
-			delayMicroseconds(120);
-			digitalWrite(RST_N, HIGH);
+			dev_reset();
+			dev_powerON();
+			usWait(120);
+			dev_nreset();
 			I_ADR.DRV_SEL.BIT.D0 = 0;
 			sendData(uint8_t(I_ADR.ADDR_DRV_SEL), I_ADR.DRV_SEL.DR_U8);
 			readData(I_ADR.ADDR_AP, &(I_ADR.AP.DR_U8));
 			I_ADR.AP.BIT.AP0 = 0;
 			sendData(uint8_t(I_ADR.ADDR_AP), I_ADR.AP.DR_U8);
-			delay(10);
+			msWait(10);
 			I_ADR.CLKE.BIT.D0 = 1;
 			sendData(uint8_t(I_ADR.ADDR_CLKE), I_ADR.CLKE.DR_U8);
 			I_ADR.ALRST.BIT.D7 = 0;
@@ -124,11 +174,11 @@ class SD1Device
 			sendData(uint8_t(I_ADR.ADDR_SFTRST), I_ADR.SFTRST.DR_U8);
 			I_ADR.SFTRST.DR_U8 = 0x00;
 			sendData(uint8_t(I_ADR.ADDR_SFTRST), I_ADR.SFTRST.DR_U8);
-			delay(40);
+			msWait(40);
 			I_ADR.AP.BIT.AP1 = 0;
 			I_ADR.AP.BIT.AP3 = 0;
 			sendData(uint8_t(I_ADR.ADDR_AP), I_ADR.AP.DR_U8);
-			delayMicroseconds(12);
+			usWait(12);
 			I_ADR.AP.BIT.AP2 = 0;
 			sendData(uint8_t(I_ADR.ADDR_AP), I_ADR.AP.DR_U8);
 		}
