@@ -19,11 +19,11 @@ enum
 void sendData(uint8_t addr, uint8_t sdata)
 {
 	digitalWrite(SS, LOW);
-	delayMicroseconds(200);
+	delayMicroseconds(4);
 	SPI.transfer(addr);
-	delayMicroseconds(200);
+	delayMicroseconds(4);
 	SPI.transfer(sdata);
-	delayMicroseconds(200);
+	delayMicroseconds(4);
 	digitalWrite(SS, HIGH);
 }
 
