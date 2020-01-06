@@ -39,7 +39,8 @@ void showAtten(uint8_t att)
 	}
 	if(att < ATT_STEP_MAX)
 	{
-		Serial.println(attLv);
+		Serial.print(attLv);
+		Serial.print("dB\r\n");
 	}
 	else
 	{
@@ -68,7 +69,7 @@ void loop()
 	if(Serial.available())
 	{
 		serialData = Serial.read();
-		if(serialData == 'u')
+		if((serialData == 'd')||(serialData == 'D'))
 		{
 			atten++;
 			isMute = false;
@@ -77,7 +78,7 @@ void loop()
 				atten = ATT_STEP_MAX;
 			}
 		}
-		if(serialData == 'd')
+		if((serialData == 'u')||(serialData == 'U'))
 		{
 			if(atten != 0)
 			{
@@ -85,7 +86,7 @@ void loop()
 				isMute = false;
 			}			
 		}
-		if(serialData == 'm')
+		if((serialData == 'm')||(serialData == 'M'))
 		{
 			if(!isMute)
 			{
@@ -94,12 +95,12 @@ void loop()
 			isMute = true;
 			atten = ATT_STEP_MAX;
 		}
-		if(serialData == 'r')
+		if((serialData == 'r')||(serialData == 'R'))
 		{
 			atten = prevAtt;
 			isMute = false;
 		}
-		if(serialData == 'f')
+		if((serialData == 'f')||(serialData == 'F'))
 		{
 			atten = 0;
 			isMute = false;
