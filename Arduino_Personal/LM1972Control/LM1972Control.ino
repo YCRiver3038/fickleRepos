@@ -19,6 +19,43 @@ enum
 	CH1, CH2, CH3
 }Address;
 
+void attenuate()
+{
+	atten++;
+	isMute = false;
+	if(atten > ATT_STEP_MAX)
+	{
+		atten = ATT_STEP_MAX;
+	}
+}
+void amplify()
+{
+	if(atten != 0)
+	{
+		atten--;
+		isMute = false;
+	}	
+}
+void mute()
+{
+	if(!isMute)
+	{
+		prevAtt = atten;
+	}
+	isMute = true;
+	atten = ATT_STEP_MAX;
+}
+void recall()
+{
+	atten = prevAtt;
+	isMute = false;
+}
+void full()
+{
+	atten = 0;
+	isMute = false;
+}
+
 void sendData(uint8_t addr, uint8_t sdata)
 {
 	digitalWrite(SS, LOW);
@@ -41,6 +78,8 @@ void showAtten(uint8_t att)
 	}
 	if(att < ATT_STEP_MAX)
 	{
+		Serial.print(att);
+		Serial.print(" : ");
 		Serial.print(attLv);
 		Serial.print("dB\r\n");
 	}
@@ -77,39 +116,23 @@ void loop()
 		serialData = Serial.read();
 		if((serialData == 'd')||(serialData == 'D'))
 		{
-			atten++;
-			isMute = false;
-			if(atten > ATT_STEP_MAX)
-			{
-				atten = ATT_STEP_MAX;
-			}
+			attenuate();
 		}
 		if((serialData == 'u')||(serialData == 'U'))
 		{
-			if(atten != 0)
-			{
-				atten--;
-				isMute = false;
-			}			
+			amplify();		
 		}
 		if((serialData == 'm')||(serialData == 'M'))
 		{
-			if(!isMute)
-			{
-				prevAtt = atten;
-			}
-			isMute = true;
-			atten = ATT_STEP_MAX;
+			mute();
 		}
 		if((serialData == 'r')||(serialData == 'R'))
 		{
-			atten = prevAtt;
-			isMute = false;
+			recall();
 		}
 		if((serialData == 'f')||(serialData == 'F'))
 		{
-			atten = 0;
-			isMute = false;
+			full();
 		}
 		sendData(CH1, atten);
 		sendData(CH2, atten);	
@@ -118,11 +141,7 @@ void loop()
 
 	if(digitalRead(ENC_UP) == HIGH)
 	{
-		if(atten != 0)
-		{
-			atten--;
-			isMute = false;
-		}
+		amplify();
 		sendData(CH1, atten);
 		sendData(CH2, atten);	
 		showAtten(atten);
@@ -130,12 +149,7 @@ void loop()
 	}
 	if(digitalRead(ENC_DOWN) == HIGH)
 	{
-		atten++;
-		isMute = false;
-		if(atten > ATT_STEP_MAX)
-		{
-			atten = ATT_STEP_MAX;
-		}
+		attenuate();
 		sendData(CH1, atten);
 		sendData(CH2, atten);	
 		showAtten(atten);
@@ -145,14 +159,11 @@ void loop()
 	{
 		if(!isMute)
 		{
-			prevAtt = atten;
-			atten = ATT_STEP_MAX;
-			isMute = true;
+			mute();
 		}
 		else
 		{
-			atten = prevAtt;
-			isMute = false;
+			recall();
 		}		
 		sendData(CH1, atten);
 		sendData(CH2, atten);	
