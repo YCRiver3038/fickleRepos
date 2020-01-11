@@ -1,6 +1,9 @@
 #include "SPI.h"
 
 #define SS 10
+#define MUTE_UNMUTE 6
+#define ENC_UP 5
+#define ENC_DOWN 8
 #define ATT_STEP_MAX (uint8_t)127
 
 uint8_t atten = 0;
@@ -51,6 +54,10 @@ void showAtten(uint8_t att)
 void setup() {
 	// put your setup code here, to run once:
 	pinMode(SS, OUTPUT);
+	pinMode(ENC_UP, INPUT);
+	pinMode(ENC_DOWN, INPUT);
+	pinMode(MUTE_UNMUTE, INPUT);
+
 	digitalWrite(SS, HIGH);
 	SPI.beginTransaction(SPISettings(2000000, MSBFIRST, SPI_MODE0));
 	SPI.begin();
@@ -105,7 +112,51 @@ void loop()
 			isMute = false;
 		}
 		sendData(CH1, atten);
-		sendData(CH2, atten);
+		sendData(CH2, atten);	
 		showAtten(atten);
+	}
+
+	if(digitalRead(ENC_UP) == HIGH)
+	{
+		if(atten != 0)
+		{
+			atten--;
+			isMute = false;
+		}
+		sendData(CH1, atten);
+		sendData(CH2, atten);	
+		showAtten(atten);
+		while(digitalRead(ENC_UP) == HIGH){}
+	}
+	if(digitalRead(ENC_DOWN) == HIGH)
+	{
+		atten++;
+		isMute = false;
+		if(atten > ATT_STEP_MAX)
+		{
+			atten = ATT_STEP_MAX;
+		}
+		sendData(CH1, atten);
+		sendData(CH2, atten);	
+		showAtten(atten);
+		while(digitalRead(ENC_DOWN) == HIGH){}
+	}
+	if(digitalRead(MUTE_UNMUTE)==HIGH)
+	{
+		if(!isMute)
+		{
+			prevAtt = atten;
+			atten = ATT_STEP_MAX;
+			isMute = true;
+		}
+		else
+		{
+			atten = prevAtt;
+			isMute = false;
+		}		
+		sendData(CH1, atten);
+		sendData(CH2, atten);	
+		showAtten(atten);
+		while(digitalRead(MUTE_UNMUTE) == HIGH){}		
 	}
 }

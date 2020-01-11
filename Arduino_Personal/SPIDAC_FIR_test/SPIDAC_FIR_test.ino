@@ -1,6 +1,6 @@
 #include "SPI.h"
 #include "stdlib.h"
-#include "ringbuffer.h"
+#include "../../ringbuffer.h"
 
 #define SRCLR 3
 #define OE 4
