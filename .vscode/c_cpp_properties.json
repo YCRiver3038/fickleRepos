@@ -4,15 +4,37 @@
             "name": "Linux",
             "includePath": [
                 "/home/ycriver/.arduino15/packages/arduino/tools/**",
-                "/home/ycriver/.arduino15/packages/arduino/hardware/avr/1.8.2/**"
+                "/home/ycriver/.arduino15/packages/arduino/hardware/avr/1.8.2/**",
+                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\**",
+                "C:\\Program Files (x86)\\Arduino\\tools\\**"
             ],
             "forcedInclude": [
-                "/home/ycriver/.arduino15/packages/arduino/hardware/avr/1.8.2/cores/arduino/Arduino.h"
+                "/home/ycriver/.arduino15/packages/arduino/hardware/avr/1.8.2/cores/arduino/Arduino.h",
+                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h"
             ],
             "intelliSenseMode": "gcc-x64",
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c11",
             "cppStandard": "c++17"
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Program Files (x86)/Arduino/hardware/**"
+            ],
+            "forcedInclude": [
+                "C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Arduino.h"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/MinGW/bin/gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x86"
         }
     ],
     "version": 4
