@@ -3,6 +3,7 @@
 
 #include "SD1REG.h"
 #include "SPI.h"
+#include "stdint.h"
 
 #define TMEM_ALLOC_ERR 0xFF
 #define TMEM_ALLOC_SUCCESS 0x00
@@ -227,36 +228,49 @@ class SD1Tone
 			T_ADR_FOOTER[2] = 0x81;
 			T_ADR_FOOTER[3] = 0x80;			 
 		}
-		~SD1Tone()
+
+		uint8_t getToneMemory(uint8_t tnmax=16)
 		{
-			if(TSets != nullptr)
-			{
-				free(TSets);
-			}
-		}
-		
-		uint8_t getToneMemory(uint8_t tnmax)
-		{
-			toneNumber = tnmax;
+			toneNumber = tnmax - 1;
 			if(toneNumber > 15)
 			{
 				toneNumber = 15;
 			}
-			TSets = (ToneSettings*)calloc((toneNumber+1), sizeof(ToneSettings));
+			if(toneNumber < 0)
+			{
+				toneNumber = 0;
+			}
+			TSets = (ToneSettings*)calloc((toneNumber + 1), sizeof(ToneSettings));
 			if(TSets == nullptr)
 			{
 				T_ADR_HEADER = 0x80;
 				return TMEM_ALLOC_ERR;
 			}
-			T_ADR_HEADER = 0x80+tnmax;
+			T_ADR_HEADER = 0x80 + tnmax;
 			return TMEM_ALLOC_SUCCESS;
 		}
+
 		void deleteToneMemory()
 		{
 			if(TSets != nullptr)
 			{
 				free(TSets);
 			}
+		}
+
+		~SD1Tone()
+		{
+			deleteToneMemory();
+		}
+
+		void sendToneParams(SD1Device target)
+		{
+			target.select();
+			target.sendDataNCS(&FIFO_ADDR, 1);
+			target.sendDataNCS(&T_ADR_HEADER, 1);
+			target.sendDataNCS(TSets, (sizeof(ToneSettings)*(toneNumber+1)));
+			target.sendDataNCS(T_ADR_FOOTER, 4);
+			target.deselect();
 		}
 
 		void setToneParams(uint8_t tNumber, OPNUMBERDEF onum, PARAM_NAMEDEF nsel, uint8_t sVal)
@@ -566,14 +580,5 @@ class SD1Tone
 			}
 		}
 
-		void sendToneParams(SD1Device target)
-		{
-			target.select();
-			target.sendDataNCS(&FIFO_ADDR, 1);
-			target.sendDataNCS(&T_ADR_HEADER, 1);
-			target.sendDataNCS(TSets, (sizeof(ToneSettings)*(toneNumber+1)));
-			target.sendDataNCS(T_ADR_FOOTER, 4);
-			target.deselect();
-		}
 };
 #endif
