@@ -36,137 +36,139 @@ uint8_t segments_i8con[CHARS] = {0x3F/*0*/, 0x06/*1*/, 0x5B/*2*/, 0x4F/*3*/,
 
 void showAtt_7SEG()
 {
-  if (Target1.getAttStep() >= ATT_STEP_MAX)
-  {
-	sendChars[0] = segments_i8con[0x1F];
-	sendChars[1] = segments_i8con[0x1F];
-	sendChars[2] = segments_i8con[0x1F];
-	sendChars[3] = segments_i8con[0x1F];
-  }
-  else
-  {
-	rat_d1 = (-1.0*attLv) / 10.0;
-	rat_d2 = fmod((-1.0*attLv), 10.0);
-	rat_d3 = fmod((attLv * -10.0), 10.0);
-	if((int8_t)rat_d1 != 0)
+	if (Target1.getAttStep() >= ATT_STEP_MAX)
 	{
-	  sendChars[0] = segments_i8con[0x1F];
-	  sendChars[1] = segments_i8con[(int8_t)rat_d1];
+		sendChars[0] = segments_i8con[0x1F];
+		sendChars[1] = segments_i8con[0x1F];
+		sendChars[2] = segments_i8con[0x1F];
+		sendChars[3] = segments_i8con[0x1F];
 	}
 	else
 	{
-	  sendChars[0] = segments_i8con[0x23];
-	  sendChars[1] = segments_i8con[0x1F];
+		rat_d1 = (-1.0*attLv) / 10.0;
+		rat_d2 = fmod((-1.0*attLv), 10.0);
+		rat_d3 = fmod((attLv * -10.0), 10.0);
+		if((int8_t)rat_d1 != 0)
+		{
+		sendChars[0] = segments_i8con[0x1F];
+		sendChars[1] = segments_i8con[(int8_t)rat_d1];
+		}
+		else
+		{
+		sendChars[0] = segments_i8con[0x23];
+		sendChars[1] = segments_i8con[0x1F];
+		}
+		sendChars[2] = (segments_i8con[(int8_t)rat_d2] | 0x80);
+		sendChars[3] = segments_i8con[(int8_t)rat_d3];
 	}
-	sendChars[2] = (segments_i8con[(int8_t)rat_d2] | 0x80);
-	sendChars[3] = segments_i8con[(int8_t)rat_d3];
-  }
-  
-  digitalWrite(CS_7SEG, LOW);
-  SPI.transfer(sendChars, DIGITS);
-  digitalWrite(CS_7SEG, HIGH);
+	
+	digitalWrite(CS_7SEG, LOW);
+	SPI.transfer(sendChars, DIGITS);
+	digitalWrite(CS_7SEG, HIGH);
 }
 
 void showAtten(uint8_t attArg)
 {
-  if(attArg < 96)
-  {
-	attLv = -0.5*(float)attArg;
-  }
-  else
-  {
-	attLv = -48.0-(float)(attArg-96);
-  }
-
-  #ifdef USING_SERIAL
-  if(attArg < ATT_STEP_MAX)
-  {
-	Serial.print(attArg);
-	Serial.print(" : ");
-	Serial.print(attArg);
-	Serial.print("dB\r\n");
-  }
-  else
-  {
-	Serial.print("MUTE\r\n");
-  }
-  #endif
-
-  showAtt_7SEG();
-}
-
-void setup() {
-  // put your setup code here, to run once:
-  pinMode(ENC_UP, INPUT);
-  pinMode(ENC_DOWN, INPUT);
-  pinMode(MUTE_UNMUTE, INPUT);
-
-  //Serial.begin(115200);
-
-  Target1.mute();
-  Target1.applyAtt();
-  showAtten(Target1.getAttStep());
-}
-
-void loop()
- {
-  // put your main code here, to run repeatedly:
-  
-  #ifdef USING_SERIAL
-  if(Serial.available())
-  {
-	serialData = Serial.read();
-	if((serialData == 'd')||(serialData == 'D'))
+	if(attArg < 96)
 	{
-	  Target1.attenuate();
-	}
-	if((serialData == 'u')||(serialData == 'U'))
-	{
-	  Target1.amplify();    
-	}
-	if((serialData == 'm')||(serialData == 'M'))
-	{
-	  Target1.mute();
-	}
-	if((serialData == 'r')||(serialData == 'R'))
-	{
-	  Target1.recall();
-	}
-	if((serialData == 'f')||(serialData == 'F'))
-	{
-	  Target1.full();
-	}
-	Target1.applyAtt();
-	showAtten(Target1.getAttStep());
-  }
-  #endif
-
-  if(digitalRead(ENC_UP) == HIGH)
-  {
-	Target1.amplify();
-	Target1.applyAtt();
-	showAtten(Target1.getAttStep());
-	while(digitalRead(ENC_UP) == HIGH){}
-  }
-  if(digitalRead(ENC_DOWN) == HIGH)
-  {
-	Target1.attenuate();
-	Target1.applyAtt();
-	showAtten(Target1.getAttStep());
-	while(digitalRead(ENC_DOWN) == HIGH){}
-  }
-  if(digitalRead(MUTE_UNMUTE)==HIGH)
-  {
-	if(!Target1.getMuteStatus())
-	{
-	  Target1.mute();
+		attLv = -0.5*(float)attArg;
 	}
 	else
 	{
-	  Target1.recall();
-	}   
+		attLv = -48.0-(float)(attArg-96);
+	}
+
+	#ifdef USING_SERIAL
+	if(attArg < ATT_STEP_MAX)
+	{
+		Serial.print(attArg);
+		Serial.print(" : ");
+		Serial.print(attArg);
+		Serial.print("dB\r\n");
+	}
+	else
+	{
+		Serial.print("MUTE\r\n");
+	}
+	#endif
+
+	showAtt_7SEG();
+}
+
+void setup() {
+// put your setup code here, to run once:
+	#ifdef USING_SERIAL
+	Serial.begin(115200);
+	#endif
+
+	pinMode(ENC_UP, INPUT);
+	pinMode(ENC_DOWN, INPUT);
+	pinMode(MUTE_UNMUTE, INPUT);
+
+	Target1.mute();
 	Target1.applyAtt();
 	showAtten(Target1.getAttStep());
-	while(digitalRead(MUTE_UNMUTE) == HIGH){}   
-  }
+}
+
+void loop()
+{
+// put your main code here, to run repeatedly:
+	
+	#ifdef USING_SERIAL
+	if(Serial.available())
+	{
+		serialData = Serial.read();
+		if((serialData == 'd')||(serialData == 'D'))
+		{
+			Target1.attenuate();
+		}
+		if((serialData == 'u')||(serialData == 'U'))
+		{
+			Target1.amplify();    
+		}
+		if((serialData == 'm')||(serialData == 'M'))
+		{
+			Target1.mute();
+		}
+		if((serialData == 'r')||(serialData == 'R'))
+		{
+			Target1.recall();
+		}
+		if((serialData == 'f')||(serialData == 'F'))
+		{
+			Target1.full();
+		}
+		Target1.applyAtt();
+		showAtten(Target1.getAttStep());
+	}
+	#endif
+
+	if(digitalRead(ENC_UP) == HIGH)
+	{
+		Target1.amplify();
+		Target1.applyAtt();
+		showAtten(Target1.getAttStep());
+		while(digitalRead(ENC_UP) == HIGH){}
+	}
+	if(digitalRead(ENC_DOWN) == HIGH)
+	{
+		Target1.attenuate();
+		Target1.applyAtt();
+		showAtten(Target1.getAttStep());
+		while(digitalRead(ENC_DOWN) == HIGH){}
+	}
+	if(digitalRead(MUTE_UNMUTE)==HIGH)
+	{
+		if(!Target1.getMuteStatus())
+		{
+			Target1.mute();
+		}
+		else
+		{
+			Target1.recall();
+		}
+		Target1.applyAtt();
+		showAtten(Target1.getAttStep());
+		while(digitalRead(MUTE_UNMUTE) == HIGH){}   
+	}
 }
