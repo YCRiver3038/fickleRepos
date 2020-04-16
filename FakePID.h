@@ -77,7 +77,7 @@ class FPIDConfig
  * publicメンバ：
  *  FPIDController()：コンストラクタ
  *                    privateメンバの初期化を行う
- *  control(FPIDConfig cnf, float aimVal, float observedVal, float* ctrlTarget)：PID制御を行う
+ *  control(FPIDConfig cnf, float aimVal, float observedVal, float* ctrlTarget)：PID制御を行う。※cnf.integResetCountが 0 の時は、積算をリセットしない
  *      引数説明：
  *          FPIDConfig cnf：ゲインの情報
  *          float aimVal：制御目標値
@@ -123,7 +123,7 @@ class FPIDController
             a2oDiff_N = aimVal - observedVal;
             IntDif += a2oDiff_N;
             *ctrlTarget += (a2oDiff_N*cnf.PGain)+((a2oDiff_P-a2oDiff_N)*cnf.DGain)+(IntDif*cnf.IGain);
-            if(IntDifCount >= cnf.integResetCount)
+            if((IntDifCount >= cnf.integResetCount)&&(cnf.integResetCount != 0))
             {
                 IntDif = 0.0;
                 IntDifCount = 0;

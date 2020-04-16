@@ -102,6 +102,7 @@ class MIDIAnalyzer
 			if(data < 0xF0)
 			{
 				rcvmsg = data&0xF0;
+				targetChannel = data&0x0F;
 				switch (rcvmsg)
 				{
 					case 0x80:
