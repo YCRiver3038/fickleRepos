@@ -1,4 +1,4 @@
-#include "../../FakePID.h"
+#include "FakePID.h"
 
 #define VREG_AIM_VOLTAGE 13.85f
 #define AD2VO_COEF 0.0244f
@@ -10,7 +10,7 @@ void setup() {
   float readVo = 0.0;
   float duty = 0.0;
 
-  FPID_GainSet gainUsing = {1.0f, 0.0001f, 1.0f, 100000};
+  FPID_GainSet gainUsing = {3.0f, 0.0005f, 7.0f, 0};
   FPIDController ctrl;
   FPIDConfig cnfUsing(gainUsing);
   

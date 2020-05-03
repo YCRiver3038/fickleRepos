@@ -5,6 +5,7 @@
 
 #ifndef SD1IFREG_HEADER_INCLUDED
 #define SD1IFREG_HEADER_INCLUDED
+#define MAX_VOICE 16
 
 #include "stdint.h"
 

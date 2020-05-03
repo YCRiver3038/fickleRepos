@@ -1,19 +1,13 @@
-#include "SPI.h"
+//#include "SPI.h"
 #include "stdlib.h"
 #include "../../ringbuffer.h"
+#include "fir_coefscalc.h"
 
 #define SRCLR 3
 #define OE 4
 //#define FILTERED
 
 #define INT_MAX_USING 127
-#define PI_USING 3.14159265358979323846
-
-#define CUTOFF_FREQ 2000.0f
-#define SMPL_FREQ 13265.0f
-
-#define COEF_SIZE 32
-#define SHIFT_OFFSET 1e-16
 
 int8_t SendValue = 0;
 int16_t SendValueShort = 0;
@@ -22,25 +16,15 @@ int16_t  SendValueShort2 = 0;
 float tableIndex = 0.0;
 short tableIndexCasted = 0;
 
-double fir_Coef = 0.0;
-float fir_Coef_fl[COEF_SIZE] = {0};
-int8_t fir_Coef_byte[COEF_SIZE] = {0};
-double fir_hx = {0.0};
-double fir_Window = {0.0};
-float windowIndex = 0.0;
-short sampleCount = 0;
 int ctr1 = 0; 
 int ctr2 = 0;
 int ctr3 = 0;
 byte sendBuf[2] = {0};
-uint8_t sampledData[COEF_SIZE] = {0};
-uint8_t sampledData2[COEF_SIZE] = {0};
 int16_t adOffs = 127;
 
 void setup() {
   // put your setup code here, to run once: 
 
-  float shiftedCtr1 = 0.0; 
  
   pinMode(SRCLR, OUTPUT);
   pinMode(OE, OUTPUT);
@@ -55,19 +39,6 @@ void setup() {
   SPI.transfer16(0xFFFF);
   digitalWrite(OE, LOW);
   
-  for(ctr1 = 0; ctr1 < COEF_SIZE; ctr1++)
-  {
-    windowIndex = (float)ctr1 / (float)COEF_SIZE;
-    shiftedCtr1 = (float)ctr1 - ((float)COEF_SIZE / 2.0) + SHIFT_OFFSET;
-    
-    fir_hx = sin(2.0*PI_USING*(CUTOFF_FREQ/SMPL_FREQ)*shiftedCtr1) / (PI_USING*shiftedCtr1);
-
-    //Hanning窓
-    fir_Window = 0.5 - (0.5 * cos(2 * PI * windowIndex));
-
-    fir_Coef_fl[ctr1] = fir_hx *fir_Window;
-    fir_Coef_byte[ctr1] = (int8_t)(fir_Coef_fl[ctr1] * (double)INT_MAX_USING);
-  }
   ADCSRA = ADCSRA & 0b11111010;
 }
 

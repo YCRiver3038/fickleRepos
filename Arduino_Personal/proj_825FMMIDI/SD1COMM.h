@@ -229,12 +229,12 @@ class SD1Tone
 			T_ADR_FOOTER[3] = 0x80;			 
 		}
 
-		uint8_t getToneMemory(uint8_t tnmax=16)
+		uint8_t getToneMemory(uint8_t tnmax=MAX_VOICE)
 		{
 			toneNumber = tnmax - 1;
-			if(toneNumber > 15)
+			if(toneNumber > (MAX_VOICE-1))
 			{
-				toneNumber = 15;
+				toneNumber = (MAX_VOICE-1);
 			}
 			if(toneNumber < 0)
 			{

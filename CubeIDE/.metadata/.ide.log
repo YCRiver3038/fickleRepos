@@ -1,0 +1,1588 @@
+2020-04-24 19:39:34,556 [INFO] Activator:176 - 
+
+
+2020-04-24 19:39:34,559 [INFO] Activator:177 - !SESSION log4j initialized
+2020-04-24 19:39:46,862 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303
+2020-04-24 19:39:46,877 [INFO] DbMcusXml:72 - Set database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/mcu/
+2020-04-24 19:39:46,881 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/boardmanager/
+2020-04-24 19:39:46,882 [INFO] DbMcus:235 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-04-24 19:39:46,882 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-04-24 19:39:46,892 [INFO] DbMcusAds:85 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-24 19:39:46,893 [INFO] DbMcusDocs:108 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-24 19:39:46,895 [INFO] DbMcusJson:61 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-24 19:39:46,895 [INFO] DbBoardsDocs:97 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-24 19:39:46,896 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-24 19:39:46,999 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/cs/
+2020-04-24 19:39:47,106 [INFO] RulesReader:52 - Compatibility file has been processed (208 Rules)
+2020-04-24 19:39:47,216 [INFO] MicroXplorer:570 - Detected Java Version = 1.8.0_242
+2020-04-24 19:39:47,216 [INFO] DbMcusXml:72 - Set database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/mcu/
+2020-04-24 19:39:47,217 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/boardmanager/
+2020-04-24 19:39:47,217 [INFO] DbMcus:235 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-04-24 19:39:47,218 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-04-24 19:39:47,218 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-24 19:39:47,218 [INFO] DbMcusAds:85 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-24 19:39:47,218 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-24 19:39:47,218 [INFO] DbMcusDocs:108 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-24 19:39:47,219 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-24 19:39:47,219 [INFO] DbMcusJson:61 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-24 19:39:47,219 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-24 19:39:47,219 [INFO] DbBoardsDocs:97 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-24 19:39:47,219 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-24 19:39:47,219 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-24 19:39:47,220 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-24 19:39:47,220 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-24 19:39:47,220 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/cs/
+2020-04-24 19:39:47,302 [INFO] MainPanel:181 - HeapMemory: 328204288
+2020-04-24 19:39:47,393 [INFO] DbMcusXml:72 - Set database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/mcu/
+2020-04-24 19:39:47,393 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/boardmanager/
+2020-04-24 19:39:47,393 [INFO] DbMcus:235 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-04-24 19:39:47,394 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-04-24 19:39:47,395 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-24 19:39:47,395 [INFO] DbMcusAds:85 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-24 19:39:47,396 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-24 19:39:47,396 [INFO] DbMcusDocs:108 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-24 19:39:47,396 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-24 19:39:47,396 [INFO] DbMcusJson:61 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-24 19:39:47,396 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-24 19:39:47,397 [INFO] DbBoardsDocs:97 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-24 19:39:47,397 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-24 19:39:47,397 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-24 19:39:47,397 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-24 19:39:47,397 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-24 19:39:47,397 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/cs/
+2020-04-24 19:39:47,422 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303
+2020-04-24 19:39:47,423 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, tutovideos]
+2020-04-24 19:39:47,425 [INFO] PluginManage:292 - Check plugin analytics
+2020-04-24 19:39:47,483 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2020-04-24 19:39:47,483 [INFO] PluginManage:292 - Check plugin clock
+2020-04-24 19:39:47,550 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2020-04-24 19:39:47,550 [INFO] PluginManage:292 - Check plugin ddr
+2020-04-24 19:39:47,554 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2020-04-24 19:39:47,554 [INFO] PluginManage:292 - Check plugin filemanager
+2020-04-24 19:39:47,682 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2020-04-24 19:39:47,683 [INFO] PluginManage:292 - Check plugin ipmanager
+2020-04-24 19:39:47,706 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2020-04-24 19:39:47,707 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2020-04-24 19:39:47,770 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2020-04-24 19:39:47,770 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2020-04-24 19:39:47,833 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2020-04-24 19:39:47,834 [INFO] PluginManage:292 - Check plugin power
+2020-04-24 19:39:47,872 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2020-04-24 19:39:47,872 [INFO] PluginManage:292 - Check plugin projectmanager
+2020-04-24 19:39:47,887 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2020-04-24 19:39:47,888 [INFO] PluginManage:292 - Check plugin thirdparty
+2020-04-24 19:39:47,965 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (C:/Users/yuuki/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 21 ms. number of Sw pack : 11
+2020-04-24 19:39:47,989 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2020-04-24 19:39:47,989 [INFO] PluginManage:292 - Check plugin tools
+2020-04-24 19:39:47,994 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2020-04-24 19:39:47,994 [INFO] PluginManage:292 - Check plugin tutovideos
+2020-04-24 19:39:48,000 [INFO] PluginManage:347 - Ignore plugin tutovideos (category:base)
+2020-04-24 19:39:48,001 [INFO] PluginManage:292 - Check plugin updater
+2020-04-24 19:39:48,010 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2020-04-24 19:39:48,011 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2020-04-24 19:39:48,208 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-24 19:39:48,330 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,331 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2020-04-24 19:39:48,336 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,336 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2020-04-24 19:39:48,342 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,342 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2020-04-24 19:39:48,345 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,346 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2020-04-24 19:39:48,350 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,350 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2020-04-24 19:39:48,355 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,356 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2020-04-24 19:39:48,368 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,368 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2020-04-24 19:39:48,372 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,372 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2020-04-24 19:39:48,379 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,380 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2020-04-24 19:39:48,416 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,416 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2020-04-24 19:39:48,420 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,420 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2020-04-24 19:39:48,428 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,428 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2020-04-24 19:39:48,441 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,441 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2020-04-24 19:39:48,459 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,460 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2020-04-24 19:39:48,466 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,466 [INFO] PluginManager:200 - loadIPPluginJar : add gtzc
+2020-04-24 19:39:48,476 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,476 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2020-04-24 19:39:48,486 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,486 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2020-04-24 19:39:48,528 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,531 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2020-04-24 19:39:48,540 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,540 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2020-04-24 19:39:48,545 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,545 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2020-04-24 19:39:48,557 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,558 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2020-04-24 19:39:48,574 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,574 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2020-04-24 19:39:48,579 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,580 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2020-04-24 19:39:48,586 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,586 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2020-04-24 19:39:48,605 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,608 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2020-04-24 19:39:48,612 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,612 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2020-04-24 19:39:48,649 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,649 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2020-04-24 19:39:48,656 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,656 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2020-04-24 19:39:48,662 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,662 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2020-04-24 19:39:48,669 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,670 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2020-04-24 19:39:48,674 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,674 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2020-04-24 19:39:48,681 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,682 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2020-04-24 19:39:48,689 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,689 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2020-04-24 19:39:48,697 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,697 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2020-04-24 19:39:48,701 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,701 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2020-04-24 19:39:48,705 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,706 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2020-04-24 19:39:48,712 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:39:48,712 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2020-04-24 19:39:49,284 [INFO] BoardConnectionPanel:3472 - [DDR PANEL] STM32CubeIDE environment
+2020-04-24 19:39:49,285 [INFO] MainDdrPanel:103 - [DDR PANEL] GETTER - cubeProgrammerPath is: null
+2020-04-24 19:39:49,487 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-04-24 19:39:49,696 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-04-24 19:39:49,699 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-24 19:39:49,700 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-04-24 19:39:49,704 [INFO] BoardConnectionPanel:3472 - [DDR PANEL] STM32CubeIDE environment
+2020-04-24 19:39:49,705 [INFO] MainDdrPanel:103 - [DDR PANEL] GETTER - cubeProgrammerPath is: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.3.0.202002181050\tools\bin
+2020-04-24 19:39:49,709 [INFO] ProgrammerExecThread:148 - [ProgrammerAPI] CubeProgrammer command construction: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.3.0.202002181050\tools\bin\STM32_Programmer_CLI.exe -l
+2020-04-24 19:39:50,313 [INFO] MainDdrPanel:93 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.3.0.202002181050\tools\bin
+2020-04-24 19:39:50,322 [INFO] Updater:886 - Updater Version found : 5.6.1
+2020-04-24 19:39:50,345 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303
+2020-04-24 19:39:50,498 [INFO] MainUpdater:2230 - connection check result : 10
+2020-04-24 19:39:50,498 [INFO] MainUpdater:2874 - Updater definition file requires update
+2020-04-24 19:39:50,499 [INFO] MainUpdater:236 - Updater Check For Update Now.
+2020-04-24 19:39:50,499 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.60
+2020-04-24 19:39:50,519 [INFO] ServerAccessManage:348 - Download File updaters.zip
+2020-04-24 19:39:50,576 [INFO] FileExtend:225 - Unzip File : updaters.zip
+2020-04-24 19:39:50,576 [INFO] FileExtend:240 - Standard Zip Deflate
+2020-04-24 19:39:50,975 [WARN] MainUpdater:1073 - Updater busy. Cannot search thirdparties
+2020-04-24 19:39:51,943 [INFO] ServerAccessManage:348 - Download File PacksControlFlags.xml
+2020-04-24 19:39:51,985 [INFO] ServerAccessManage:348 - Download File cubemx.pidx
+2020-04-24 19:39:52,096 [INFO] LoadServerUpdatesThread:301 - End of LoadServerUpdate Thread
+2020-04-24 19:39:52,124 [INFO] CheckServerUpdateThread:92 - End of CheckServer Thread
+2020-04-24 19:39:52,313 [INFO] MainUpdater:2230 - connection check result : 10
+2020-04-24 19:39:52,314 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2020-04-24 19:39:52,566 [INFO] McuFinderGlobals:40 - Set McuFinder mode to 2 (CubeIDE integrated)
+2020-04-24 19:39:52,582 [INFO] FinderPluginLoader:86 - Searching for filters in installed packs
+2020-04-24 19:39:52,584 [INFO] DbMcusXml:110 - Load MCU database from C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/mcu/families.xml
+2020-04-24 19:39:53,648 [INFO] DbMcusJson:90 - JSON generation date=Wed Feb 12 00:02:54 JST 2020 (1581433374)
+2020-04-24 19:39:54,123 [INFO] ThirdPartyDb:261 - Close Third Party DataBase File (C:/Users/yuuki/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-04-24 19:39:54,181 [INFO] IntegrityCheckThread:98 - End integrity checks thread
+2020-04-24 19:39:54,252 [INFO] DbMcus:171 - Found 1670 MCUs (1625 are supported by CubeMX, 1625 are visible in CubeMX)
+2020-04-24 19:39:54,253 [INFO] ApiDb:158 - Load user favorites file C:\Users\yuuki/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2020-04-24 19:39:54,253 [INFO] ApiDb:163 - User favorites MCUs=[]
+2020-04-24 19:39:54,254 [INFO] DbMcus:183 - Set 0 / 0 favorites MCUs
+2020-04-24 19:39:55,009 [INFO] DbMcusAds:143 - JSON generation date=Thu Feb 21 01:46:15 JST 2019 (1550681175)
+2020-04-24 19:39:55,194 [INFO] ServerAccessManage:348 - Download File 
+2020-04-24 19:39:55,204 [INFO] LoadUrlFilesThread:161 - End of LoadServerUrlFiles without Thread
+2020-04-24 19:39:55,232 [INFO] McuDetailPanel:181 - Set advertising image to C:/Users/yuuki/STM32Cube/Repository/\PRSTM32MP10219-01-med.jpg
+2020-04-24 19:39:56,501 [INFO] ServerAccessManage:348 - Download File mcusAds.json._tmp_
+2020-04-24 19:39:56,529 [INFO] LoadUrlFilesThread:134 - End of LoadUrlFiles Thread
+2020-04-24 19:39:57,064 [INFO] ServerAccessManage:348 - Download File mcusDocs.json._tmp_
+2020-04-24 19:39:57,381 [INFO] LoadUrlFilesThread:134 - End of LoadUrlFiles Thread
+2020-04-24 19:39:57,966 [INFO] ServerAccessManage:348 - Download File mcusFeaturesAndDescription.json._tmp_
+2020-04-24 19:39:59,943 [INFO] LoadUrlFilesThread:134 - End of LoadUrlFiles Thread
+2020-04-24 19:40:00,498 [INFO] ServerAccessManage:348 - Download File boardsDocs.json._tmp_
+2020-04-24 19:40:00,882 [INFO] LoadUrlFilesThread:134 - End of LoadUrlFiles Thread
+2020-04-24 19:40:01,429 [INFO] ServerAccessManage:348 - Download File boards.json._tmp_
+2020-04-24 19:40:01,786 [INFO] LoadUrlFilesThread:134 - End of LoadUrlFiles Thread
+2020-04-24 19:40:03,987 [INFO] ServerAccessManage:348 - Download File crdb.zip
+2020-04-24 19:40:04,019 [INFO] FileExtend:225 - Unzip File : crdb.zip
+2020-04-24 19:40:04,021 [INFO] FileExtend:240 - Standard Zip Deflate
+2020-04-24 19:40:04,119 [INFO] LoadUrlFilesThread:134 - End of LoadUrlFiles Thread
+2020-04-24 19:40:04,120 [INFO] DbMcusAds:143 - JSON generation date=Fri Mar 13 00:08:29 JST 2020 (1584025709)
+2020-04-24 19:40:04,125 [INFO] DbMcusDocs:142 - JSON generation date=Thu Apr 16 23:39:08 JST 2020 (1587047948)
+2020-04-24 19:40:04,333 [INFO] DbMcusDocs:77 - Found 554 MCUs documents
+2020-04-24 19:40:04,337 [INFO] ApiDb:186 - Save user favorites file C:\Users\yuuki/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2020-04-24 19:40:04,337 [INFO] ApiDb:191 - User favorites MCUs=[]
+2020-04-24 19:40:04,338 [INFO] DbMcusXml:110 - Load MCU database from C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/mcu/families.xml
+2020-04-24 19:40:04,765 [INFO] DbMcusJson:90 - JSON generation date=Wed Apr 15 14:54:18 JST 2020 (1586930058)
+2020-04-24 19:40:05,136 [INFO] DbMcus:171 - Found 1670 MCUs (1625 are supported by CubeMX, 1625 are visible in CubeMX)
+2020-04-24 19:40:05,137 [INFO] ApiDb:158 - Load user favorites file C:\Users\yuuki/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2020-04-24 19:40:05,137 [INFO] ApiDb:163 - User favorites MCUs=[]
+2020-04-24 19:40:05,137 [INFO] DbMcus:183 - Set 0 / 0 favorites MCUs
+2020-04-24 19:40:05,181 [INFO] McuFilterPanel:249 - Update 0 favorites MCUs
+2020-04-24 19:40:05,416 [INFO] DbBoardsDocs:131 - JSON generation date=Wed Apr 15 14:54:18 JST 2020 (1586930058)
+2020-04-24 19:40:05,437 [INFO] DbBoardsPdsc:92 - Found 22 items
+2020-04-24 19:40:05,440 [INFO] DbBoardsPdsc:92 - Found 9 items
+2020-04-24 19:40:05,445 [INFO] DbBoardsPdsc:92 - Found 28 items
+2020-04-24 19:40:05,447 [INFO] DbBoardsPdsc:92 - Found 1 items
+2020-04-24 19:40:05,453 [INFO] DbBoardsPdsc:92 - Found 40 items
+2020-04-24 19:40:05,460 [INFO] DbBoardsPdsc:92 - Found 39 items
+2020-04-24 19:40:05,463 [INFO] DbBoardsPdsc:92 - Found 2 items
+2020-04-24 19:40:05,466 [INFO] DbBoardsPdsc:92 - Found 4 items
+2020-04-24 19:40:05,471 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2020-04-24 19:40:05,471 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-DK: unknown feature type=WIFI, name=, username=WIFI 802.11 b/g/n, n=1
+2020-04-24 19:40:05,473 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2020-04-24 19:40:05,474 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2020-04-24 19:40:05,474 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=WIFI, name=, username=WIFI 802.11 a/b/g/n, n=1
+2020-04-24 19:40:05,474 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2020-04-24 19:40:05,483 [INFO] DbBoardsJson:80 - JSON generation date=Tue Feb 11 22:53:55 JST 2020 (1581429235)
+2020-04-24 19:40:05,489 [INFO] DbBoards:120 - Found 145 boards (142 are supported by CubeMX)
+2020-04-24 19:40:05,493 [INFO] DbBoardsDocs:131 - JSON generation date=Wed Apr 15 14:54:18 JST 2020 (1586930058)
+2020-04-24 19:40:05,500 [INFO] DbBoardsDocs:70 - Found 157 boards documents
+2020-04-24 19:40:05,502 [WARN] DbBoards:130 - board NUCLEO-H743ZI2 has no document id list !
+2020-04-24 19:40:05,502 [WARN] DbBoards:130 - board NUCLEO-L4P5ZG has no document id list !
+2020-04-24 19:40:05,503 [WARN] DbBoards:130 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2020-04-24 19:40:05,503 [WARN] DbBoards:130 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2020-04-24 19:40:05,503 [WARN] DbBoards:130 - board NUCLEO-WB35CE has no document id list !
+2020-04-24 19:40:05,503 [WARN] DbBoards:130 - board STM32F401C-DISCO has no document id list !
+2020-04-24 19:40:05,504 [WARN] DbBoards:130 - board STM32F769I-DISC1 has no document id list !
+2020-04-24 19:40:05,504 [WARN] DbBoards:152 - board STM32F723E-DISCO / document id not found: 4598
+2020-04-24 19:40:05,504 [WARN] DbBoards:130 - board STM32L-DISCOVERY has no document id list !
+2020-04-24 19:40:05,504 [WARN] DbBoards:152 - board STM32L496G-DISCO / document id not found: 4598
+2020-04-24 19:40:05,505 [WARN] DbBoards:152 - board STM32H747I-DISCO / document id not found: 4598
+2020-04-24 19:40:05,505 [WARN] DbBoards:130 - board STM32H747I-DISC1 has no document id list !
+2020-04-24 19:40:05,505 [WARN] DbBoards:152 - board STM32H745I-DISCO / document id not found: 4598
+2020-04-24 19:40:05,505 [WARN] DbBoards:152 - board STM32H750B-DK / document id not found: 4598
+2020-04-24 19:40:05,505 [WARN] DbBoards:152 - board STM32H7B3I-DK / document id not found: 4598
+2020-04-24 19:40:05,505 [WARN] DbBoards:152 - board STM32L4R9I-DISCO / document id not found: 4598
+2020-04-24 19:40:05,505 [WARN] DbBoards:130 - board STM32MP157A-DK1 has no document id list !
+2020-04-24 19:40:05,506 [WARN] DbBoards:152 - board STM32L562E-DK / document id not found: 4598
+2020-04-24 19:40:05,506 [WARN] DbBoards:130 - board STM32L4P5G-DK has no document id list !
+2020-04-24 19:40:05,506 [WARN] DbBoards:130 - board STM32091C-EVAL has no document id list !
+2020-04-24 19:40:05,506 [WARN] DbBoards:130 - board STM3210C-EVAL has no document id list !
+2020-04-24 19:40:05,506 [WARN] DbBoards:130 - board STM32100E-EVAL has no document id list !
+2020-04-24 19:40:05,506 [WARN] DbBoards:130 - board STM3221G-EVAL has no document id list !
+2020-04-24 19:40:05,506 [WARN] DbBoards:130 - board STM32303C-EVAL has no document id list !
+2020-04-24 19:40:05,506 [WARN] DbBoards:130 - board STM32L152D-EVAL has no document id list !
+2020-04-24 19:40:05,506 [WARN] DbBoards:130 - board STM32746G-EVAL2 has no document id list !
+2020-04-24 19:40:05,506 [WARN] DbBoards:130 - board STM32F779I-EVAL has no document id list !
+2020-04-24 19:40:05,507 [WARN] DbBoards:130 - board STM32479I-EVAL has no document id list !
+2020-04-24 19:40:05,507 [WARN] DbBoards:130 - board STM32H743I-EVAL2 has no document id list !
+2020-04-24 19:40:05,507 [WARN] DbBoards:152 - board STM32H7B3I-EVAL / document id not found: 4596
+2020-04-24 19:40:05,507 [WARN] DbBoards:130 - board STM32H753I-EVAL2 has no document id list !
+2020-04-24 19:40:05,507 [WARN] DbBoards:130 - board STM32G474E-EVAL1 has no document id list !
+2020-04-24 19:40:05,507 [WARN] DbBoards:130 - board STEVAL-BFA001V1B has no document id list !
+2020-04-24 19:40:05,507 [WARN] DbBoards:130 - board STEVAL-BFA001V2B has no document id list !
+2020-04-24 19:40:05,508 [WARN] DbBoards:130 - board STEVAL-MKSBOX1V1 has no document id list !
+2020-04-24 19:40:05,508 [WARN] DbBoards:130 - board STEVAL-STWINKT1 has no document id list !
+2020-04-24 19:40:05,508 [WARN] DbBoards:130 - board STEVAL-IDP005V1 has no document id list !
+2020-04-24 19:40:05,508 [WARN] DbBoards:130 - board STEVAL-IDP005V2 has no document id list !
+2020-04-24 19:40:06,610 [INFO] ApiDb:158 - Load user favorites file C:\Users\yuuki/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2020-04-24 19:40:06,611 [INFO] ApiDb:163 - User favorites Boards=[]
+2020-04-24 19:40:06,611 [INFO] DbBoards:209 - Set 0 / 0 favorites Boards
+2020-04-24 19:40:06,616 [INFO] DbBoardsDocs:70 - Found 314 boards documents
+2020-04-24 19:40:06,618 [INFO] ApiDb:186 - Save user favorites file C:\Users\yuuki/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2020-04-24 19:40:06,618 [INFO] ApiDb:191 - User favorites Boards=[]
+2020-04-24 19:40:06,621 [INFO] DbBoardsPdsc:92 - Found 22 items
+2020-04-24 19:40:06,624 [INFO] DbBoardsPdsc:92 - Found 9 items
+2020-04-24 19:40:06,626 [INFO] DbBoardsPdsc:92 - Found 28 items
+2020-04-24 19:40:06,628 [INFO] DbBoardsPdsc:92 - Found 1 items
+2020-04-24 19:40:06,631 [INFO] DbBoardsPdsc:92 - Found 40 items
+2020-04-24 19:40:06,635 [INFO] DbBoardsPdsc:92 - Found 39 items
+2020-04-24 19:40:06,636 [INFO] DbBoardsPdsc:92 - Found 2 items
+2020-04-24 19:40:06,638 [INFO] DbBoardsPdsc:92 - Found 4 items
+2020-04-24 19:40:06,639 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2020-04-24 19:40:06,640 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-DK: unknown feature type=WIFI, name=, username=WIFI 802.11 b/g/n, n=1
+2020-04-24 19:40:06,641 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2020-04-24 19:40:06,641 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2020-04-24 19:40:06,641 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=WIFI, name=, username=WIFI 802.11 a/b/g/n, n=1
+2020-04-24 19:40:06,641 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2020-04-24 19:40:06,650 [INFO] DbBoardsJson:80 - JSON generation date=Tue Feb 11 22:53:55 JST 2020 (1581429235)
+2020-04-24 19:40:06,654 [INFO] DbBoards:120 - Found 145 boards (142 are supported by CubeMX)
+2020-04-24 19:40:06,655 [WARN] DbBoards:130 - board NUCLEO-H743ZI2 has no document id list !
+2020-04-24 19:40:06,655 [WARN] DbBoards:130 - board NUCLEO-L4P5ZG has no document id list !
+2020-04-24 19:40:06,656 [WARN] DbBoards:130 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2020-04-24 19:40:06,656 [WARN] DbBoards:130 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2020-04-24 19:40:06,656 [WARN] DbBoards:130 - board NUCLEO-WB35CE has no document id list !
+2020-04-24 19:40:06,657 [WARN] DbBoards:130 - board STM32F401C-DISCO has no document id list !
+2020-04-24 19:40:06,657 [WARN] DbBoards:130 - board STM32F769I-DISC1 has no document id list !
+2020-04-24 19:40:06,657 [WARN] DbBoards:152 - board STM32F723E-DISCO / document id not found: 4598
+2020-04-24 19:40:06,658 [WARN] DbBoards:130 - board STM32L-DISCOVERY has no document id list !
+2020-04-24 19:40:06,658 [WARN] DbBoards:152 - board STM32L496G-DISCO / document id not found: 4598
+2020-04-24 19:40:06,658 [WARN] DbBoards:152 - board STM32H747I-DISCO / document id not found: 4598
+2020-04-24 19:40:06,658 [WARN] DbBoards:130 - board STM32H747I-DISC1 has no document id list !
+2020-04-24 19:40:06,658 [WARN] DbBoards:152 - board STM32H745I-DISCO / document id not found: 4598
+2020-04-24 19:40:06,658 [WARN] DbBoards:152 - board STM32H750B-DK / document id not found: 4598
+2020-04-24 19:40:06,659 [WARN] DbBoards:152 - board STM32H7B3I-DK / document id not found: 4598
+2020-04-24 19:40:06,659 [WARN] DbBoards:152 - board STM32L4R9I-DISCO / document id not found: 4598
+2020-04-24 19:40:06,659 [WARN] DbBoards:130 - board STM32MP157A-DK1 has no document id list !
+2020-04-24 19:40:06,659 [WARN] DbBoards:152 - board STM32L562E-DK / document id not found: 4598
+2020-04-24 19:40:06,659 [WARN] DbBoards:130 - board STM32L4P5G-DK has no document id list !
+2020-04-24 19:40:06,659 [WARN] DbBoards:130 - board STM32091C-EVAL has no document id list !
+2020-04-24 19:40:06,659 [WARN] DbBoards:130 - board STM3210C-EVAL has no document id list !
+2020-04-24 19:40:06,659 [WARN] DbBoards:130 - board STM32100E-EVAL has no document id list !
+2020-04-24 19:40:06,660 [WARN] DbBoards:130 - board STM3221G-EVAL has no document id list !
+2020-04-24 19:40:06,660 [WARN] DbBoards:130 - board STM32303C-EVAL has no document id list !
+2020-04-24 19:40:06,660 [WARN] DbBoards:130 - board STM32L152D-EVAL has no document id list !
+2020-04-24 19:40:06,660 [WARN] DbBoards:130 - board STM32746G-EVAL2 has no document id list !
+2020-04-24 19:40:06,660 [WARN] DbBoards:130 - board STM32F779I-EVAL has no document id list !
+2020-04-24 19:40:06,660 [WARN] DbBoards:130 - board STM32479I-EVAL has no document id list !
+2020-04-24 19:40:06,660 [WARN] DbBoards:130 - board STM32H743I-EVAL2 has no document id list !
+2020-04-24 19:40:06,661 [WARN] DbBoards:152 - board STM32H7B3I-EVAL / document id not found: 4596
+2020-04-24 19:40:06,661 [WARN] DbBoards:130 - board STM32H753I-EVAL2 has no document id list !
+2020-04-24 19:40:06,661 [WARN] DbBoards:130 - board STM32G474E-EVAL1 has no document id list !
+2020-04-24 19:40:06,661 [WARN] DbBoards:130 - board STEVAL-BFA001V1B has no document id list !
+2020-04-24 19:40:06,661 [WARN] DbBoards:130 - board STEVAL-BFA001V2B has no document id list !
+2020-04-24 19:40:06,661 [WARN] DbBoards:130 - board STEVAL-MKSBOX1V1 has no document id list !
+2020-04-24 19:40:06,661 [WARN] DbBoards:130 - board STEVAL-STWINKT1 has no document id list !
+2020-04-24 19:40:06,661 [WARN] DbBoards:130 - board STEVAL-IDP005V1 has no document id list !
+2020-04-24 19:40:06,661 [WARN] DbBoards:130 - board STEVAL-IDP005V2 has no document id list !
+2020-04-24 19:40:07,253 [INFO] ApiDb:158 - Load user favorites file C:\Users\yuuki/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2020-04-24 19:40:07,253 [INFO] ApiDb:163 - User favorites Boards=[]
+2020-04-24 19:40:07,253 [INFO] DbBoards:209 - Set 0 / 0 favorites Boards
+2020-04-24 19:40:07,415 [INFO] LoadUrlFilesThread:161 - End of LoadServerUrlFiles without Thread
+2020-04-24 19:40:07,415 [INFO] MultiScanPanel:739 - Refresh data is succesful
+2020-04-24 19:40:07,418 [INFO] McuFilterPanel:249 - Update 0 favorites MCUs
+2020-04-24 19:40:07,705 [INFO] ServerAccessManage:348 - Download File 
+2020-04-24 19:40:07,716 [INFO] LoadUrlFilesThread:161 - End of LoadServerUrlFiles without Thread
+2020-04-24 19:40:07,765 [INFO] BoardDetailPanel:180 - Set advertising image to C:/Users/yuuki/STM32Cube/Repository/\STM32L4_MCUs_N4239S_big.jpg
+2020-04-24 19:40:07,785 [INFO] BoardFilterPanel:211 - Update 0 favorites Boards
+2020-04-24 19:40:07,879 [INFO] CrossSelectorPresenter:1319 - Cross Selector saved comparison directory: C:\Users\yuuki\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2020-04-24 19:40:52,673 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.11.0
+2020-04-24 19:40:58,602 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] File copied successfully!!
+2020-04-24 19:41:03,005 [INFO] MainUpdater:2230 - connection check result : 10
+2020-04-24 19:41:03,056 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-04-24 19:41:03,056 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.60
+2020-04-24 19:41:03,058 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-24 19:41:03,058 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 499932176 Bytes (597688320)
+2020-04-24 19:41:03,059 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-04-24 19:41:03,061 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.60
+2020-04-24 19:41:03,061 [INFO] OpenFileManager:274 - Change cursor
+2020-04-24 19:41:05,044 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.ThirdPartyNb) in loaded IOC file
+2020-04-24 19:41:05,044 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.PinsNb) in loaded IOC file
+2020-04-24 19:41:05,044 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.IPNb) in loaded IOC file
+2020-04-24 19:41:05,218 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 441883600 Bytes (597688320)
+2020-04-24 19:41:05,227 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (C:/Users/yuuki/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 3 ms. number of Sw pack : 11
+2020-04-24 19:41:05,244 [INFO] DependencyParser:785 - This component is not compatible with the current MCU : [1586855777792]
+2020-04-24 19:41:05,244 [INFO] ThirdPartyModel:521 - Component with status : MCU_INCOMPATIBLE for condition : OS Tick GTIM id : 1586855777119
+2020-04-24 19:41:05,246 [INFO] DependencyParser:785 - This component is not compatible with the current MCU : [1586855780368, 1586855777875]
+2020-04-24 19:41:05,325 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 5.0.0
+2020-04-24 19:41:05,325 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 1.1.0
+2020-04-24 19:41:05,325 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 4.1.0
+2020-04-24 19:41:05,326 [INFO] ThirdParty:899 - CMSIS Pack Vendor :ARM CMSIS 5.6.0
+2020-04-24 19:41:05,326 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.13.0
+2020-04-24 19:41:05,326 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.2
+2020-04-24 19:41:05,326 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.1.0
+2020-04-24 19:41:05,326 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2020-04-24 19:41:05,326 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.0.0
+2020-04-24 19:41:05,326 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 5.0.0
+2020-04-24 19:41:05,326 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 1.0.0
+2020-04-24 19:41:05,500 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-24 19:41:05,501 [INFO] PinOutPanel:1420 - setPackage(STM32F303K8Tx,LQFP32)
+2020-04-24 19:41:06,459 [INFO] UtilMem:74 - Before build in PCC Used Memory: 327111248 Bytes (597688320)
+2020-04-24 19:41:06,862 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/yuuki/.stm32cubemx/plugins/power
+2020-04-24 19:41:06,900 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/yuuki/.stm32cubemx/plugins/power
+2020-04-24 19:41:06,939 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/yuuki/.stm32cubemx/plugins/power
+2020-04-24 19:41:06,943 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/yuuki/.stm32cubemx/plugins/power
+2020-04-24 19:41:07,139 [INFO] UtilMem:74 - After build in PCC Used Memory: 385831504 Bytes (597688320)
+2020-04-24 19:41:07,153 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,153 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,153 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,154 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,154 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,154 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,154 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,154 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,154 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,155 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,155 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,155 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,155 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,155 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,155 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,155 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,155 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,156 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,156 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,156 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,156 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,156 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,156 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,156 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,157 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,157 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,157 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,157 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,157 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,157 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,157 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,158 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,158 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,158 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-24 19:41:07,180 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2020-04-24 19:41:07,265 [INFO] OpenFileManager:294 - Restore cursor
+2020-04-24 19:41:07,468 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 440879704 Bytes (597688320)
+2020-04-24 19:41:07,547 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 445600336 Bytes (597688320)
+2020-04-24 19:41:07,854 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-04-24 19:41:07,854 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-04-24 19:41:07,858 [INFO] CodeGenerator:603 - code generatio: config db path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\
+2020-04-24 19:41:08,358 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\license.tmp_save
+2020-04-24 19:41:08,678 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\license.tmp
+2020-04-24 19:41:08,800 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-04-24 19:41:08,801 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-24 19:41:08,827 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\stm32f3xx_it.c_save
+2020-04-24 19:41:08,949 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\stm32f3xx_it.c
+2020-04-24 19:41:08,974 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\stm32f3xx_it.h_save
+2020-04-24 19:41:09,048 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\stm32f3xx_it.h
+2020-04-24 19:41:09,076 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\stm32f3xx_hal_msp.c_save
+2020-04-24 19:41:09,185 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\stm32f3xx_hal_msp.c
+2020-04-24 19:41:09,215 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\system.tmp_save
+2020-04-24 19:41:09,281 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\system.tmp
+2020-04-24 19:41:09,306 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\stm32f3xx_hal_conf.h_save
+2020-04-24 19:41:09,372 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\stm32f3xx_hal_conf.h
+2020-04-24 19:41:09,415 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\main.h_save
+2020-04-24 19:41:09,504 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\main.h
+2020-04-24 19:41:09,529 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\main.c_save
+2020-04-24 19:41:09,655 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\main.c
+2020-04-24 19:41:10,551 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 431mS.
+2020-04-24 19:41:10,557 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-04-24 19:41:10,975 [INFO] ConfigFileManager:1066 - The Die is : DIE438
+2020-04-24 19:41:23,910 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 13353mS.
+2020-04-24 19:41:23,911 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 1mS.
+2020-04-24 19:41:23,914 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-24 19:42:12,070 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,414 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,415 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,415 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,415 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,416 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,416 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,416 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,417 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,417 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,417 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,417 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,418 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,418 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,418 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,418 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,419 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,419 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,419 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,419 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,419 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:28,474 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,740 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,741 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,741 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,741 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,741 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,742 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,742 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,742 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,742 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,743 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,743 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,743 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,744 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,744 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,744 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,744 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,744 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,745 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,745 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,745 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:36,795 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,709 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,709 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,710 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,710 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,710 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,710 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,710 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,711 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,711 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,711 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,711 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,711 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,711 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,712 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,712 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,712 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,712 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,712 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,712 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,712 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:41,772 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,896 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,897 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,897 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,897 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,897 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,898 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,898 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,898 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,898 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,899 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,899 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,899 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,899 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,899 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,899 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,900 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,900 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,900 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,900 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,900 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:45,937 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,208 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,208 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,209 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,209 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,209 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,209 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,209 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,210 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,210 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,210 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,210 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,210 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,210 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,211 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,211 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,211 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,211 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,211 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,211 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,211 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:53,257 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,748 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,749 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,749 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,749 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,749 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,750 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,750 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,750 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,750 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,750 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,751 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,751 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,751 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,751 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,751 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,751 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,752 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,752 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,752 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,752 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:42:58,803 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,771 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,772 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,772 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,772 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,772 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,773 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,773 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,773 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,773 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,773 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,774 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,774 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,774 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,774 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,774 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,774 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,775 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,775 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,775 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,775 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:02,821 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:43:57,486 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 656937096 Bytes (1007681536)
+2020-04-24 19:43:59,550 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 666271168 Bytes (1007681536)
+2020-04-24 19:43:59,744 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 681671056 Bytes (1007681536)
+2020-04-24 19:43:59,906 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-04-24 19:43:59,906 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-04-24 19:43:59,906 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-04-24 19:43:59,906 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: ADC
+2020-04-24 19:43:59,906 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: RCC
+2020-04-24 19:43:59,907 [INFO] CodeGenerator:603 - code generatio: config db path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\
+2020-04-24 19:44:00,078 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\license.tmp_save
+2020-04-24 19:44:00,162 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\license.tmp
+2020-04-24 19:44:00,214 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\gpio.tmp_save
+2020-04-24 19:44:00,283 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\gpio.tmp
+2020-04-24 19:44:00,319 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-24 19:44:00,320 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for ADC
+2020-04-24 19:44:00,320 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-24 19:44:00,322 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-04-24 19:44:00,322 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-24 19:44:00,342 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\stm32f3xx_it.c_save
+2020-04-24 19:44:00,437 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\stm32f3xx_it.c
+2020-04-24 19:44:00,459 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\stm32f3xx_it.h_save
+2020-04-24 19:44:00,532 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\stm32f3xx_it.h
+2020-04-24 19:44:00,559 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\stm32f3xx_hal_msp.c_save
+2020-04-24 19:44:00,692 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\stm32f3xx_hal_msp.c
+2020-04-24 19:44:00,718 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\system.tmp_save
+2020-04-24 19:44:00,778 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\system.tmp
+2020-04-24 19:44:00,804 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\stm32f3xx_hal_conf.h_save
+2020-04-24 19:44:00,885 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\stm32f3xx_hal_conf.h
+2020-04-24 19:44:00,902 [WARN] IPConfigManager:2701 - IP not found : gpio
+2020-04-24 19:44:00,904 [WARN] CodeGenerator:2649 - IP not found : gpio
+2020-04-24 19:44:00,926 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\main.h_save
+2020-04-24 19:44:01,020 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\main.h
+2020-04-24 19:44:01,047 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\main.c_save
+2020-04-24 19:44:01,154 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\main.c
+2020-04-24 19:44:01,973 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 148mS.
+2020-04-24 19:44:01,976 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-04-24 19:44:02,188 [INFO] ConfigFileManager:1066 - The Die is : DIE438
+2020-04-24 19:44:03,727 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 1751mS.
+2020-04-24 19:44:03,728 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-24 19:44:03,732 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 1mS.
+2020-04-24 19:45:43,635 [INFO] NvicIntPanel:88 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,465x420,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2020-04-24 19:46:22,801 [INFO] Gpio:248 - dependency for GPIO [ADC1, RCC, SPI1]
+2020-04-24 19:46:38,444 [INFO] Gpio:248 - dependency for GPIO [ADC1, RCC, SPI1]
+2020-04-24 19:46:39,150 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,151 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,151 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,151 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,152 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,152 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,152 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,152 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,152 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,153 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,153 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,153 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,153 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,153 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,153 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,154 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,154 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,154 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,154 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,154 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:39,213 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,850 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,851 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,852 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,852 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,852 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,853 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,853 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,853 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,854 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,854 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,854 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,854 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,854 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,854 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,854 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,854 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,855 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,855 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,855 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,855 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,930 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,977 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,978 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,978 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,978 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,978 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,979 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,979 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,979 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,979 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,979 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,979 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,980 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,980 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,980 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,980 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,980 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,980 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,980 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,980 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,981 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,992 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,992 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,993 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,994 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,995 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,996 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,996 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,997 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,998 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:41,999 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:42,000 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:42,001 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:42,001 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:42,002 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:42,003 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:42,004 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:42,005 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:42,006 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:42,006 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:42,007 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:42,007 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:42,008 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-24 19:46:42,008 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,114 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,114 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,116 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,116 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,116 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,116 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,117 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,117 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,117 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,117 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,117 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,117 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,118 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,118 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,118 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,118 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,118 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,118 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,119 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,119 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,119 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,119 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,119 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,119 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,120 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,120 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,120 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,120 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,120 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,120 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,120 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,121 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,121 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,121 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,121 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,121 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,121 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,121 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,121 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,122 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,122 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,122 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,122 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,122 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,122 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,123 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,123 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,123 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,123 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,123 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,123 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,123 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,123 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,124 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,124 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,124 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,124 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,124 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,124 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,124 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,124 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:46:42,166 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:47:13,553 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 386365520 Bytes (1073741824)
+2020-04-24 19:47:13,732 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 429499624 Bytes (1073741824)
+2020-04-24 19:47:13,906 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SPI
+2020-04-24 19:47:13,906 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-04-24 19:47:13,906 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-04-24 19:47:13,906 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-04-24 19:47:13,906 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: ADC
+2020-04-24 19:47:13,906 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: RCC
+2020-04-24 19:47:13,907 [INFO] CodeGenerator:603 - code generatio: config db path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\
+2020-04-24 19:47:14,054 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\license.tmp_save
+2020-04-24 19:47:14,115 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\license.tmp
+2020-04-24 19:47:14,151 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\gpio.tmp_save
+2020-04-24 19:47:14,203 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\gpio.tmp
+2020-04-24 19:47:14,277 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-24 19:47:14,278 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for ADC
+2020-04-24 19:47:14,279 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-24 19:47:14,280 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-24 19:47:14,282 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SPI
+2020-04-24 19:47:14,282 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-24 19:47:14,284 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-04-24 19:47:14,285 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-24 19:47:14,307 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\stm32f3xx_it.c_save
+2020-04-24 19:47:14,387 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\stm32f3xx_it.c
+2020-04-24 19:47:14,408 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\stm32f3xx_it.h_save
+2020-04-24 19:47:14,469 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\stm32f3xx_it.h
+2020-04-24 19:47:14,492 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\stm32f3xx_hal_msp.c_save
+2020-04-24 19:47:14,603 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\stm32f3xx_hal_msp.c
+2020-04-24 19:47:14,626 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\system.tmp_save
+2020-04-24 19:47:14,676 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\MXTmpFiles\system.tmp
+2020-04-24 19:47:14,696 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\stm32f3xx_hal_conf.h_save
+2020-04-24 19:47:14,757 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\stm32f3xx_hal_conf.h
+2020-04-24 19:47:14,771 [WARN] IPConfigManager:2701 - IP not found : gpio
+2020-04-24 19:47:14,771 [WARN] CodeGenerator:2649 - IP not found : gpio
+2020-04-24 19:47:14,790 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\main.h_save
+2020-04-24 19:47:14,873 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Inc\main.h
+2020-04-24 19:47:14,895 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\main.c_save
+2020-04-24 19:47:14,992 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject\Core\Src\main.c
+2020-04-24 19:47:15,552 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 151mS.
+2020-04-24 19:47:15,555 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-04-24 19:47:15,729 [INFO] ConfigFileManager:1066 - The Die is : DIE438
+2020-04-24 19:47:17,073 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 1518mS.
+2020-04-24 19:47:17,074 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 1mS.
+2020-04-24 19:47:17,077 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-24 19:48:46,594 [INFO] Gpio:248 - dependency for GPIO [ADC1, RCC, SPI1]
+2020-04-24 19:49:55,526 [INFO] Gpio:248 - dependency for GPIO [ADC1, RCC, SPI1]
+2020-04-24 19:50:36,507 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,508 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,508 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,509 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,509 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,509 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,509 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,509 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,510 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,510 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,510 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,510 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,510 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,510 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,510 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,511 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,511 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,511 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,511 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,511 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-24 19:50:36,560 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-26 21:53:17,404 [INFO] Activator:176 - 
+
+
+2020-04-26 21:53:17,407 [INFO] Activator:177 - !SESSION log4j initialized
+2020-04-26 21:53:31,360 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303
+2020-04-26 21:53:31,376 [INFO] DbMcusXml:72 - Set database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/mcu/
+2020-04-26 21:53:31,380 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/boardmanager/
+2020-04-26 21:53:31,380 [INFO] DbMcus:235 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-04-26 21:53:31,381 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-04-26 21:53:31,391 [INFO] DbMcusAds:85 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-26 21:53:31,392 [INFO] DbMcusDocs:108 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-26 21:53:31,394 [INFO] DbMcusJson:61 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-26 21:53:31,395 [INFO] DbBoardsDocs:97 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-26 21:53:31,396 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-26 21:53:31,508 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/cs/
+2020-04-26 21:53:31,609 [INFO] RulesReader:52 - Compatibility file has been processed (208 Rules)
+2020-04-26 21:53:31,720 [INFO] MicroXplorer:570 - Detected Java Version = 1.8.0_242
+2020-04-26 21:53:31,720 [INFO] DbMcusXml:72 - Set database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/mcu/
+2020-04-26 21:53:31,721 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/boardmanager/
+2020-04-26 21:53:31,721 [INFO] DbMcus:235 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-04-26 21:53:31,722 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-04-26 21:53:31,722 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-26 21:53:31,722 [INFO] DbMcusAds:85 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-26 21:53:31,722 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-26 21:53:31,722 [INFO] DbMcusDocs:108 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-26 21:53:31,723 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-26 21:53:31,723 [INFO] DbMcusJson:61 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-26 21:53:31,723 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-26 21:53:31,723 [INFO] DbBoardsDocs:97 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-26 21:53:31,723 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-26 21:53:31,723 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-26 21:53:31,723 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-26 21:53:31,724 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-26 21:53:31,724 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/cs/
+2020-04-26 21:53:31,803 [INFO] MainPanel:181 - HeapMemory: 331350016
+2020-04-26 21:53:31,894 [INFO] DbMcusXml:72 - Set database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/mcu/
+2020-04-26 21:53:31,895 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/boardmanager/
+2020-04-26 21:53:31,895 [INFO] DbMcus:235 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-04-26 21:53:31,895 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/plugins/mcufinder/images/
+2020-04-26 21:53:31,896 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-26 21:53:31,896 [INFO] DbMcusAds:85 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-26 21:53:31,896 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-26 21:53:31,896 [INFO] DbMcusDocs:108 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-26 21:53:31,896 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-26 21:53:31,897 [INFO] DbMcusJson:61 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-26 21:53:31,897 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-26 21:53:31,897 [INFO] DbBoardsDocs:97 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-26 21:53:31,897 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-26 21:53:31,897 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/
+2020-04-26 21:53:31,897 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-26 21:53:31,898 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\yuuki\.stmcufinder\plugins\mcufinder/ => C:\Users\yuuki\.stmcufinder\plugins\mcufinder
+2020-04-26 21:53:31,898 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\yuuki\.stmcufinder\plugins\mcufinder//mcu/cs/
+2020-04-26 21:53:31,922 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303
+2020-04-26 21:53:31,924 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, tutovideos]
+2020-04-26 21:53:31,926 [INFO] PluginManage:292 - Check plugin analytics
+2020-04-26 21:53:31,934 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2020-04-26 21:53:31,935 [INFO] PluginManage:292 - Check plugin clock
+2020-04-26 21:53:31,950 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2020-04-26 21:53:31,951 [INFO] PluginManage:292 - Check plugin ddr
+2020-04-26 21:53:31,954 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2020-04-26 21:53:31,955 [INFO] PluginManage:292 - Check plugin filemanager
+2020-04-26 21:53:32,084 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2020-04-26 21:53:32,084 [INFO] PluginManage:292 - Check plugin ipmanager
+2020-04-26 21:53:32,096 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2020-04-26 21:53:32,096 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2020-04-26 21:53:32,108 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2020-04-26 21:53:32,108 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2020-04-26 21:53:32,137 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2020-04-26 21:53:32,138 [INFO] PluginManage:292 - Check plugin power
+2020-04-26 21:53:32,150 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2020-04-26 21:53:32,150 [INFO] PluginManage:292 - Check plugin projectmanager
+2020-04-26 21:53:32,167 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2020-04-26 21:53:32,168 [INFO] PluginManage:292 - Check plugin thirdparty
+2020-04-26 21:53:32,217 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (C:/Users/yuuki/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 18 ms. number of Sw pack : 11
+2020-04-26 21:53:32,237 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2020-04-26 21:53:32,237 [INFO] PluginManage:292 - Check plugin tools
+2020-04-26 21:53:32,240 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2020-04-26 21:53:32,240 [INFO] PluginManage:292 - Check plugin tutovideos
+2020-04-26 21:53:32,242 [INFO] PluginManage:347 - Ignore plugin tutovideos (category:base)
+2020-04-26 21:53:32,242 [INFO] PluginManage:292 - Check plugin updater
+2020-04-26 21:53:32,253 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2020-04-26 21:53:32,254 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2020-04-26 21:53:32,504 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-26 21:53:32,609 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,609 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2020-04-26 21:53:32,612 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,613 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2020-04-26 21:53:32,616 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,617 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2020-04-26 21:53:32,619 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,619 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2020-04-26 21:53:32,622 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,622 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2020-04-26 21:53:32,625 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,625 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2020-04-26 21:53:32,632 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,633 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2020-04-26 21:53:32,635 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,635 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2020-04-26 21:53:32,640 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,641 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2020-04-26 21:53:32,647 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,647 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2020-04-26 21:53:32,650 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,650 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2020-04-26 21:53:32,653 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,653 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2020-04-26 21:53:32,659 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,659 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2020-04-26 21:53:32,665 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,665 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2020-04-26 21:53:32,667 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,668 [INFO] PluginManager:200 - loadIPPluginJar : add gtzc
+2020-04-26 21:53:32,670 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,671 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2020-04-26 21:53:32,674 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,674 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2020-04-26 21:53:32,678 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,678 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2020-04-26 21:53:32,682 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,682 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2020-04-26 21:53:32,685 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,685 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2020-04-26 21:53:32,688 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,689 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2020-04-26 21:53:32,693 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,693 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2020-04-26 21:53:32,697 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,697 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2020-04-26 21:53:32,700 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,701 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2020-04-26 21:53:32,708 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,712 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2020-04-26 21:53:32,714 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,715 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2020-04-26 21:53:32,720 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,720 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2020-04-26 21:53:32,724 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,725 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2020-04-26 21:53:32,729 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,729 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2020-04-26 21:53:32,736 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,736 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2020-04-26 21:53:32,738 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,738 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2020-04-26 21:53:32,742 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,743 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2020-04-26 21:53:32,745 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,745 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2020-04-26 21:53:32,748 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,748 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2020-04-26 21:53:32,750 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,750 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2020-04-26 21:53:32,752 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,752 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2020-04-26 21:53:32,756 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:53:32,756 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2020-04-26 21:53:33,436 [INFO] BoardConnectionPanel:3472 - [DDR PANEL] STM32CubeIDE environment
+2020-04-26 21:53:33,436 [INFO] MainDdrPanel:103 - [DDR PANEL] GETTER - cubeProgrammerPath is: null
+2020-04-26 21:53:33,650 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-04-26 21:53:33,877 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-04-26 21:53:33,880 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-26 21:53:33,881 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-04-26 21:53:33,885 [INFO] BoardConnectionPanel:3472 - [DDR PANEL] STM32CubeIDE environment
+2020-04-26 21:53:33,885 [INFO] MainDdrPanel:103 - [DDR PANEL] GETTER - cubeProgrammerPath is: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.3.0.202002181050\tools\bin
+2020-04-26 21:53:33,890 [INFO] ProgrammerExecThread:148 - [ProgrammerAPI] CubeProgrammer command construction: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.3.0.202002181050\tools\bin\STM32_Programmer_CLI.exe -l
+2020-04-26 21:53:34,593 [INFO] MainDdrPanel:93 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.3.0.202002181050\tools\bin
+2020-04-26 21:53:34,616 [INFO] Updater:886 - Updater Version found : 5.6.1
+2020-04-26 21:53:34,662 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303
+2020-04-26 21:53:34,826 [INFO] MainUpdater:2230 - connection check result : 10
+2020-04-26 21:53:34,827 [INFO] MainUpdater:236 - Updater Check For Update Now.
+2020-04-26 21:53:34,827 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.60
+2020-04-26 21:53:34,858 [INFO] CheckServerUpdateThread:92 - End of CheckServer Thread
+2020-04-26 21:53:35,034 [INFO] MainUpdater:2230 - connection check result : 10
+2020-04-26 21:53:35,036 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2020-04-26 21:53:35,201 [INFO] McuFinderGlobals:40 - Set McuFinder mode to 2 (CubeIDE integrated)
+2020-04-26 21:53:35,212 [INFO] FinderPluginLoader:86 - Searching for filters in installed packs
+2020-04-26 21:53:35,214 [INFO] DbMcusXml:110 - Load MCU database from C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\/mcu/families.xml
+2020-04-26 21:53:35,277 [INFO] ThirdPartyDb:261 - Close Third Party DataBase File (C:/Users/yuuki/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-04-26 21:53:35,310 [INFO] IntegrityCheckThread:98 - End integrity checks thread
+2020-04-26 21:53:35,915 [INFO] DbMcusJson:90 - JSON generation date=Wed Apr 15 14:54:18 JST 2020 (1586930058)
+2020-04-26 21:53:36,521 [INFO] DbMcus:171 - Found 1670 MCUs (1625 are supported by CubeMX, 1625 are visible in CubeMX)
+2020-04-26 21:53:36,522 [INFO] ApiDb:158 - Load user favorites file C:\Users\yuuki/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2020-04-26 21:53:36,522 [INFO] ApiDb:163 - User favorites MCUs=[]
+2020-04-26 21:53:36,522 [INFO] DbMcus:183 - Set 0 / 0 favorites MCUs
+2020-04-26 21:53:37,325 [INFO] DbMcusAds:143 - JSON generation date=Fri Mar 13 00:08:29 JST 2020 (1584025709)
+2020-04-26 21:53:37,327 [INFO] LoadUrlFilesThread:161 - End of LoadServerUrlFiles without Thread
+2020-04-26 21:53:37,377 [INFO] McuDetailPanel:181 - Set advertising image to C:/Users/yuuki/STM32Cube/Repository/\STM32L4_MCUs_N4239S_big.jpg
+2020-04-26 21:53:37,683 [INFO] McuFilterPanel:249 - Update 0 favorites MCUs
+2020-04-26 21:53:37,821 [INFO] DbBoardsPdsc:92 - Found 22 items
+2020-04-26 21:53:37,823 [INFO] DbBoardsPdsc:92 - Found 9 items
+2020-04-26 21:53:37,826 [INFO] DbBoardsPdsc:92 - Found 28 items
+2020-04-26 21:53:37,828 [INFO] DbBoardsPdsc:92 - Found 1 items
+2020-04-26 21:53:37,833 [INFO] DbBoardsPdsc:92 - Found 40 items
+2020-04-26 21:53:37,859 [INFO] DbBoardsPdsc:92 - Found 39 items
+2020-04-26 21:53:37,862 [INFO] DbBoardsPdsc:92 - Found 2 items
+2020-04-26 21:53:37,864 [INFO] DbBoardsPdsc:92 - Found 4 items
+2020-04-26 21:53:37,869 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2020-04-26 21:53:37,869 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-DK: unknown feature type=WIFI, name=, username=WIFI 802.11 b/g/n, n=1
+2020-04-26 21:53:37,871 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2020-04-26 21:53:37,872 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2020-04-26 21:53:37,872 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=WIFI, name=, username=WIFI 802.11 a/b/g/n, n=1
+2020-04-26 21:53:37,872 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2020-04-26 21:53:37,884 [INFO] DbBoardsJson:80 - JSON generation date=Tue Feb 11 22:53:55 JST 2020 (1581429235)
+2020-04-26 21:53:37,889 [INFO] DbBoards:120 - Found 145 boards (142 are supported by CubeMX)
+2020-04-26 21:53:37,894 [INFO] DbBoardsDocs:131 - JSON generation date=Wed Apr 15 14:54:18 JST 2020 (1586930058)
+2020-04-26 21:53:37,901 [INFO] DbBoardsDocs:70 - Found 157 boards documents
+2020-04-26 21:53:37,902 [WARN] DbBoards:130 - board NUCLEO-H743ZI2 has no document id list !
+2020-04-26 21:53:37,902 [WARN] DbBoards:130 - board NUCLEO-L4P5ZG has no document id list !
+2020-04-26 21:53:37,903 [WARN] DbBoards:130 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2020-04-26 21:53:37,903 [WARN] DbBoards:130 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2020-04-26 21:53:37,903 [WARN] DbBoards:130 - board NUCLEO-WB35CE has no document id list !
+2020-04-26 21:53:37,904 [WARN] DbBoards:130 - board STM32F401C-DISCO has no document id list !
+2020-04-26 21:53:37,904 [WARN] DbBoards:130 - board STM32F769I-DISC1 has no document id list !
+2020-04-26 21:53:37,904 [WARN] DbBoards:152 - board STM32F723E-DISCO / document id not found: 4598
+2020-04-26 21:53:37,904 [WARN] DbBoards:130 - board STM32L-DISCOVERY has no document id list !
+2020-04-26 21:53:37,905 [WARN] DbBoards:152 - board STM32L496G-DISCO / document id not found: 4598
+2020-04-26 21:53:37,905 [WARN] DbBoards:152 - board STM32H747I-DISCO / document id not found: 4598
+2020-04-26 21:53:37,905 [WARN] DbBoards:130 - board STM32H747I-DISC1 has no document id list !
+2020-04-26 21:53:37,905 [WARN] DbBoards:152 - board STM32H745I-DISCO / document id not found: 4598
+2020-04-26 21:53:37,905 [WARN] DbBoards:152 - board STM32H750B-DK / document id not found: 4598
+2020-04-26 21:53:37,905 [WARN] DbBoards:152 - board STM32H7B3I-DK / document id not found: 4598
+2020-04-26 21:53:37,906 [WARN] DbBoards:152 - board STM32L4R9I-DISCO / document id not found: 4598
+2020-04-26 21:53:37,906 [WARN] DbBoards:130 - board STM32MP157A-DK1 has no document id list !
+2020-04-26 21:53:37,906 [WARN] DbBoards:152 - board STM32L562E-DK / document id not found: 4598
+2020-04-26 21:53:37,906 [WARN] DbBoards:130 - board STM32L4P5G-DK has no document id list !
+2020-04-26 21:53:37,906 [WARN] DbBoards:130 - board STM32091C-EVAL has no document id list !
+2020-04-26 21:53:37,906 [WARN] DbBoards:130 - board STM3210C-EVAL has no document id list !
+2020-04-26 21:53:37,906 [WARN] DbBoards:130 - board STM32100E-EVAL has no document id list !
+2020-04-26 21:53:37,906 [WARN] DbBoards:130 - board STM3221G-EVAL has no document id list !
+2020-04-26 21:53:37,906 [WARN] DbBoards:130 - board STM32303C-EVAL has no document id list !
+2020-04-26 21:53:37,907 [WARN] DbBoards:130 - board STM32L152D-EVAL has no document id list !
+2020-04-26 21:53:37,907 [WARN] DbBoards:130 - board STM32746G-EVAL2 has no document id list !
+2020-04-26 21:53:37,907 [WARN] DbBoards:130 - board STM32F779I-EVAL has no document id list !
+2020-04-26 21:53:37,907 [WARN] DbBoards:130 - board STM32479I-EVAL has no document id list !
+2020-04-26 21:53:37,907 [WARN] DbBoards:130 - board STM32H743I-EVAL2 has no document id list !
+2020-04-26 21:53:37,907 [WARN] DbBoards:152 - board STM32H7B3I-EVAL / document id not found: 4596
+2020-04-26 21:53:37,907 [WARN] DbBoards:130 - board STM32H753I-EVAL2 has no document id list !
+2020-04-26 21:53:37,908 [WARN] DbBoards:130 - board STM32G474E-EVAL1 has no document id list !
+2020-04-26 21:53:37,908 [WARN] DbBoards:130 - board STEVAL-BFA001V1B has no document id list !
+2020-04-26 21:53:37,908 [WARN] DbBoards:130 - board STEVAL-BFA001V2B has no document id list !
+2020-04-26 21:53:37,908 [WARN] DbBoards:130 - board STEVAL-MKSBOX1V1 has no document id list !
+2020-04-26 21:53:37,908 [WARN] DbBoards:130 - board STEVAL-STWINKT1 has no document id list !
+2020-04-26 21:53:37,908 [WARN] DbBoards:130 - board STEVAL-IDP005V1 has no document id list !
+2020-04-26 21:53:37,908 [WARN] DbBoards:130 - board STEVAL-IDP005V2 has no document id list !
+2020-04-26 21:53:39,349 [INFO] ApiDb:158 - Load user favorites file C:\Users\yuuki/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2020-04-26 21:53:39,350 [INFO] ApiDb:163 - User favorites Boards=[]
+2020-04-26 21:53:39,350 [INFO] DbBoards:209 - Set 0 / 0 favorites Boards
+2020-04-26 21:53:39,491 [INFO] LoadUrlFilesThread:161 - End of LoadServerUrlFiles without Thread
+2020-04-26 21:53:39,492 [INFO] BoardDetailPanel:180 - Set advertising image to C:/Users/yuuki/STM32Cube/Repository/\STM32L4_MCUs_N4239S_big.jpg
+2020-04-26 21:53:39,535 [INFO] BoardFilterPanel:211 - Update 0 favorites Boards
+2020-04-26 21:53:39,663 [INFO] CrossSelectorPresenter:1319 - Cross Selector saved comparison directory: C:\Users\yuuki\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2020-04-26 21:54:10,401 [INFO] DbMcusDocs:142 - JSON generation date=Thu Apr 16 23:39:08 JST 2020 (1587047948)
+2020-04-26 21:54:10,504 [INFO] DbMcusDocs:77 - Found 563 MCUs documents
+2020-04-26 21:54:48,697 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] withoutVersionV1.25.0
+2020-04-26 21:54:52,145 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] File copied successfully!!
+2020-04-26 21:54:55,024 [INFO] MainUpdater:2230 - connection check result : 10
+2020-04-26 21:54:55,061 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-04-26 21:54:55,061 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.60
+2020-04-26 21:54:55,064 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-26 21:54:55,065 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 319555736 Bytes (507510784)
+2020-04-26 21:54:55,066 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-04-26 21:54:55,067 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.60
+2020-04-26 21:54:55,068 [INFO] OpenFileManager:274 - Change cursor
+2020-04-26 21:54:57,482 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.ThirdPartyNb) in loaded IOC file
+2020-04-26 21:54:57,482 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.PinsNb) in loaded IOC file
+2020-04-26 21:54:57,482 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.IPNb) in loaded IOC file
+2020-04-26 21:54:57,884 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 319279128 Bytes (507510784)
+2020-04-26 21:54:57,892 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (C:/Users/yuuki/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 2 ms. number of Sw pack : 11
+2020-04-26 21:54:57,908 [INFO] DependencyParser:785 - This component is not compatible with the current MCU : [1586855777792]
+2020-04-26 21:54:57,909 [INFO] ThirdPartyModel:521 - Component with status : MCU_INCOMPATIBLE for condition : OS Tick GTIM id : 1586855777119
+2020-04-26 21:54:57,909 [INFO] DependencyParser:785 - This component is not compatible with the current MCU : [1586855780368, 1586855777875]
+2020-04-26 21:54:57,963 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 5.0.0
+2020-04-26 21:54:57,963 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 1.1.0
+2020-04-26 21:54:57,963 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 4.1.0
+2020-04-26 21:54:57,964 [INFO] ThirdParty:899 - CMSIS Pack Vendor :ARM CMSIS 5.6.0
+2020-04-26 21:54:57,964 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.13.0
+2020-04-26 21:54:57,964 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.2
+2020-04-26 21:54:57,964 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.1.0
+2020-04-26 21:54:57,964 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2020-04-26 21:54:57,964 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.0.0
+2020-04-26 21:54:57,964 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 5.0.0
+2020-04-26 21:54:57,964 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 1.0.0
+2020-04-26 21:54:58,190 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-26 21:54:58,194 [INFO] PinOutPanel:1420 - setPackage(STM32F446RETx,LQFP64)
+2020-04-26 21:54:58,752 [INFO] UtilMem:74 - Before build in PCC Used Memory: 351571000 Bytes (507510784)
+2020-04-26 21:54:59,219 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/yuuki/.stm32cubemx/plugins/power
+2020-04-26 21:54:59,262 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/yuuki/.stm32cubemx/plugins/power
+2020-04-26 21:54:59,308 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/yuuki/.stm32cubemx/plugins/power
+2020-04-26 21:54:59,313 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/yuuki/.stm32cubemx/plugins/power
+2020-04-26 21:54:59,562 [INFO] UtilMem:74 - After build in PCC Used Memory: 414491720 Bytes (507510784)
+2020-04-26 21:54:59,579 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,579 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,579 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,579 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,583 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,583 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,584 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,584 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,584 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,584 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,584 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,585 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,585 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,585 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,585 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,585 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,585 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,585 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,586 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,586 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,586 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,586 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,586 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,587 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,587 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,587 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,587 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,587 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,588 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,588 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,588 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,588 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,588 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,589 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,589 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,589 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,589 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,589 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,590 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,590 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,590 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,590 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,590 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,591 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,591 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,591 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,591 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,591 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,592 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,592 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,592 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,592 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,592 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,593 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,593 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,593 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,593 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,594 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,594 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,595 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-26 21:54:59,620 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2020-04-26 21:54:59,737 [INFO] OpenFileManager:294 - Restore cursor
+2020-04-26 21:55:00,061 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 349380832 Bytes (507510784)
+2020-04-26 21:55:00,791 [INFO] ServerAccessManage:348 - Download File stm32cube_fw_f4_v1250.zip
+2020-04-26 21:59:30,048 [INFO] FileExtend:225 - Unzip File : stm32cube_fw_f4_v1250.zip
+2020-04-26 21:59:30,051 [INFO] FileExtend:240 - Standard Zip Deflate
+2020-04-26 22:00:31,014 [INFO] LoadServerPackagesThread:160 - End of LoadServerPackages Thread
+2020-04-26 22:00:31,036 [INFO] CheckServerUpdateThread:92 - End of CheckServer Thread
+2020-04-26 22:00:31,059 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 463309304 Bytes (1073741824)
+2020-04-26 22:00:31,453 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-04-26 22:00:31,455 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-04-26 22:00:31,457 [INFO] CodeGenerator:603 - code generatio: config db path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\
+2020-04-26 22:00:32,124 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\MXTmpFiles\license.tmp_save
+2020-04-26 22:00:32,685 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\MXTmpFiles\license.tmp
+2020-04-26 22:00:32,929 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-04-26 22:00:32,930 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-26 22:00:32,943 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Src\stm32f4xx_it.c_save
+2020-04-26 22:00:33,145 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Src\stm32f4xx_it.c
+2020-04-26 22:00:33,156 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Inc\stm32f4xx_it.h_save
+2020-04-26 22:00:33,258 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Inc\stm32f4xx_it.h
+2020-04-26 22:00:33,285 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Src\stm32f4xx_hal_msp.c_save
+2020-04-26 22:00:33,549 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Src\stm32f4xx_hal_msp.c
+2020-04-26 22:00:33,565 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\MXTmpFiles\system.tmp_save
+2020-04-26 22:00:33,741 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\MXTmpFiles\system.tmp
+2020-04-26 22:00:33,760 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Inc\stm32f4xx_hal_conf.h_save
+2020-04-26 22:00:33,929 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Inc\stm32f4xx_hal_conf.h
+2020-04-26 22:00:33,988 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Inc\main.h_save
+2020-04-26 22:00:34,152 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Inc\main.h
+2020-04-26 22:00:34,189 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Src\main.c_save
+2020-04-26 22:00:34,340 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Src\main.c
+2020-04-26 22:00:35,285 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 435mS.
+2020-04-26 22:00:35,291 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-04-26 22:00:36,784 [INFO] ConfigFileManager:1066 - The Die is : DIE421
+2020-04-26 22:00:41,731 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 6440mS.
+2020-04-26 22:00:41,732 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 1mS.
+2020-04-26 22:00:41,737 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 1mS.
+2020-04-26 22:00:51,254 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,692 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,693 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,693 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,693 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,698 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,699 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,701 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,701 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,703 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,704 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,704 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,704 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,704 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,704 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,754 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,879 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,880 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,880 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,880 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,880 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,881 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,881 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,881 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,881 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,881 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,882 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,882 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,882 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,882 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:00:57,939 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:07,957 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:07,961 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:07,962 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:07,962 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:07,962 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:07,963 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:07,963 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:07,963 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:07,963 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:07,963 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:07,964 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:07,964 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:07,964 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:07,964 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:07,984 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:08,050 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:08,051 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:08,052 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:08,052 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:08,053 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:08,053 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:08,053 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:08,054 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:08,054 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:08,054 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:08,054 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:08,054 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:08,054 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:08,055 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:08,094 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:10,864 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:10,869 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:10,869 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:10,869 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:10,870 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:10,870 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:10,870 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:10,870 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:10,870 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:10,871 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:10,871 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:10,871 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:10,871 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:10,871 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:10,910 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:26,795 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:26,798 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:26,799 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:26,799 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:26,799 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:26,799 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:26,800 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:26,800 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:26,800 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:26,801 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:26,801 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:26,801 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:26,801 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:26,801 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:26,844 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:30,376 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:30,379 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:30,379 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:30,380 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:30,380 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:30,380 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:30,380 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:30,380 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:30,381 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:30,381 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:30,381 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:30,381 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:30,381 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:30,381 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:30,444 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,458 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,461 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,461 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,462 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,462 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,462 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,462 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,462 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,463 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,463 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,463 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,463 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,463 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,463 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,463 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:01:33,506 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:05,505 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:05,507 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:05,507 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:05,508 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:05,508 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:05,508 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:05,508 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:05,508 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:05,508 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:05,508 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:05,509 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:05,509 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:05,509 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:05,509 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:05,546 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:08,274 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:08,277 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:08,277 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:08,277 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:08,277 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:08,278 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:08,278 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:08,278 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:08,278 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:08,278 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:08,279 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:08,279 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:08,279 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:08,279 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:08,332 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:11,804 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:11,808 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:11,808 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:11,808 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:11,808 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:11,809 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:11,809 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:11,809 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:11,809 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:11,809 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:11,809 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:11,809 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:11,810 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:11,810 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:11,847 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:16,892 [INFO] SpinnerEditor:79 - is string kkkk
+2020-04-26 22:02:18,935 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,938 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,938 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,938 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,938 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,939 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,939 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,939 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,939 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,939 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,939 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,939 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,939 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,940 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,977 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,978 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:18,979 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:02:25,645 [INFO] ADCParametersView:101 -                Rank 1 : true
+2020-04-26 22:02:25,645 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:02:27,833 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:27,833 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:02:33,640 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:33,640 [INFO] ADCParametersView:101 -        *      Rank 2 : true
+2020-04-26 22:02:34,454 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:02:34,455 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:16,672 [INFO] SpinnerEditor:79 - is string kkkk
+2020-04-26 22:03:17,912 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,912 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:17,915 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,915 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:17,915 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,916 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:17,916 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,916 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:17,916 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,916 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:17,917 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,917 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:17,917 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,917 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:17,917 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,917 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:17,918 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,918 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:17,918 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,918 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:17,918 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,918 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:17,919 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,919 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:17,919 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,919 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:17,919 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,919 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:17,919 [INFO] ADCParametersView:101 -        *      Rank 2 : false
+2020-04-26 22:03:17,963 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,964 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:17,964 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:17,966 [INFO] SpinnerEditor:79 - is string kkkk
+2020-04-26 22:03:19,061 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,062 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:19,069 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,070 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:19,071 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,071 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:19,072 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,073 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:19,073 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,074 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:19,075 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,075 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:19,076 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,076 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:19,077 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,078 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:19,079 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,079 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:19,080 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,080 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:19,081 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,081 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:19,081 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,081 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:19,082 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,082 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:19,082 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,082 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:19,083 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:19,137 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,138 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:19,138 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:03:20,344 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:03:20,344 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:04:14,532 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-04-26 22:04:19,805 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-04-26 22:04:51,604 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-04-26 22:05:03,537 [INFO] ParamManager:955 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2020-04-26 22:08:10,250 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 722097304 Bytes (1073741824)
+2020-04-26 22:08:10,426 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 738882840 Bytes (1073741824)
+2020-04-26 22:08:10,682 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-04-26 22:08:10,682 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: ADC
+2020-04-26 22:08:10,682 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: RCC
+2020-04-26 22:08:10,682 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-04-26 22:08:10,682 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: DMA
+2020-04-26 22:08:10,682 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-04-26 22:08:10,683 [INFO] CodeGenerator:603 - code generatio: config db path: C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.6.1.202004052303\\db\
+2020-04-26 22:08:10,866 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\MXTmpFiles\license.tmp_save
+2020-04-26 22:08:10,935 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\MXTmpFiles\license.tmp
+2020-04-26 22:08:10,984 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\MXTmpFiles\gpio.tmp_save
+2020-04-26 22:08:11,043 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\MXTmpFiles\gpio.tmp
+2020-04-26 22:08:11,095 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-26 22:08:11,097 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for ADC
+2020-04-26 22:08:11,097 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-26 22:08:11,098 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-26 22:08:11,099 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2020-04-26 22:08:11,100 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-26 22:08:11,123 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\MXTmpFiles\dma.tmp_save
+2020-04-26 22:08:11,185 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\MXTmpFiles\dma.tmp
+2020-04-26 22:08:11,208 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\MXTmpFiles\dma_GV.tmp_save
+2020-04-26 22:08:11,262 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\MXTmpFiles\dma_GV.tmp
+2020-04-26 22:08:11,265 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-04-26 22:08:11,266 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-26 22:08:11,288 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Src\stm32f4xx_it.c_save
+2020-04-26 22:08:11,381 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Src\stm32f4xx_it.c
+2020-04-26 22:08:11,406 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Inc\stm32f4xx_it.h_save
+2020-04-26 22:08:11,475 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Inc\stm32f4xx_it.h
+2020-04-26 22:08:11,504 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Src\stm32f4xx_hal_msp.c_save
+2020-04-26 22:08:11,652 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Src\stm32f4xx_hal_msp.c
+2020-04-26 22:08:11,680 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\MXTmpFiles\system.tmp_save
+2020-04-26 22:08:11,741 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\MXTmpFiles\system.tmp
+2020-04-26 22:08:11,773 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Inc\stm32f4xx_hal_conf.h_save
+2020-04-26 22:08:11,871 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Inc\stm32f4xx_hal_conf.h
+2020-04-26 22:08:11,888 [WARN] IPConfigManager:2701 - IP not found : gpio
+2020-04-26 22:08:11,889 [WARN] CodeGenerator:2649 - IP not found : gpio
+2020-04-26 22:08:11,910 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Inc\main.h_save
+2020-04-26 22:08:12,004 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Inc\main.h
+2020-04-26 22:08:12,029 [INFO] CodeEngine:188 - oldGeneratedFile, C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Src\main.c_save
+2020-04-26 22:08:12,135 [INFO] CodeEngine:206 - Generated code: C:\Users\yuuki\git\fickleRepos\CubeIDE\TestProject_F446RE\Core\Src\main.c
+2020-04-26 22:08:12,610 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 151mS.
+2020-04-26 22:08:12,613 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-04-26 22:08:12,808 [INFO] ConfigFileManager:1066 - The Die is : DIE421
+2020-04-26 22:08:15,138 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 2525mS.
+2020-04-26 22:08:15,139 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 1mS.
+2020-04-26 22:08:15,142 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-26 22:08:44,127 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,127 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:08:44,129 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,129 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:08:44,129 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,129 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:08:44,130 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,130 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:08:44,130 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,130 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:08:44,130 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,130 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:08:44,130 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,130 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:08:44,131 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,131 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:08:44,131 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,131 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:08:44,131 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,131 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:08:44,131 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,131 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:08:44,131 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,131 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:08:44,132 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,132 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:08:44,132 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,132 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:08:44,132 [INFO] ADCParametersView:101 -                Rank 2 : false
+2020-04-26 22:08:44,169 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,170 [INFO] ADCParametersView:101 -                Rank 1 : false
+2020-04-26 22:08:44,170 [INFO] ADCParametersView:101 -                Rank 2 : false
