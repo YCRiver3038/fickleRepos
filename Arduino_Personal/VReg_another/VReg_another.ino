@@ -17,7 +17,7 @@ void setup()
 	int16_t flipctr = 0;
 	uint32_t ctrlStatus = 0;
 
-	FPID_GainSet gainUsing = {5.0f, 0.0001f, 2.0f, 0};
+	FPID_GainSet gainUsing = {500.0f, 1.0f, 10.0f, 0};
 	FPIDController ctrl;
 	FPIDConfig cnfUsing(gainUsing);
 	pinMode(vDuty, OUTPUT);
@@ -28,6 +28,10 @@ void setup()
 	{
 		readVo = (float)(analogRead(AD_Vo)) * AD2VO_COEF;
 		ctrl.control(cnfUsing, VREG_AIM_VOLTAGE, readVo, &flipTiming);
+		if(flipTiming > (float)FLIPCTR_MAX)
+		{
+			flipTiming = (float)FLIPCTR_MAX;
+		}
 		flipTiming_u16 = FLIPCTR_MAX - (uint16_t)flipTiming;
 
 		if(flipTiming_u16 < 1)
@@ -46,7 +50,6 @@ void setup()
 			flipctr++;
 		}
 	}
-	delayMicroseconds(4);
 }
 
 void loop() {}
