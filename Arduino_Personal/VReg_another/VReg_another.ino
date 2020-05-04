@@ -7,7 +7,7 @@
 #define AD_Vo 2
 #define vDuty 9
 
-#define FLIPCTR_MAX (int16_t)32000
+#define FLIPCTR_MAX (int16_t)32700
 
 void setup() 
 {
