@@ -4,7 +4,7 @@
 #define VREG_LIMIT_VOLTAGE 13.9
 #define AD2VO_COEF 0.0244f
 
-#define AD_Vo 3
+#define AD_Vo 2
 #define vDuty 9
 
 #define FLIPCTR_MAX (uint16_t)32000
@@ -17,7 +17,7 @@ void setup()
 	int16_t flipctr = 0;
 	uint32_t ctrlStatus = 0;
 
-	FPID_GainSet gainUsing = {500.0f, 1.0f, 10.0f, 0};
+	FPID_GainSet gainUsing = {60.0f, 0.1f, 4.0f, 0};
 	FPIDController ctrl;
 	FPIDConfig cnfUsing(gainUsing);
 	pinMode(vDuty, OUTPUT);

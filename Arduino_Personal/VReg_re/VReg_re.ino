@@ -3,14 +3,14 @@
 #define VREG_AIM_VOLTAGE 13.85f
 #define AD2VO_COEF 0.0244f
 
-#define AD_Vo 3
+#define AD_Vo 2
 #define vDuty 9
 
 void setup() {
   float readVo = 0.0;
   float duty = 0.0;
 
-  FPID_GainSet gainUsing = {3.0f, 0.0005f, 7.0f, 0};
+  FPID_GainSet gainUsing = {20.0f, 0.05f, 10.0f, 0};
   FPIDController ctrl;
   FPIDConfig cnfUsing(gainUsing);
   
