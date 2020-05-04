@@ -10,7 +10,7 @@ void setup() {
   float readVo = 0.0;
   float duty = 0.0;
 
-  FPID_GainSet gainUsing = {20.0f, 0.05f, 10.0f, 0};
+  FPID_GainSet gainUsing = {200.0f, 0.0f, 10.0f, 0};
   FPIDController ctrl;
   FPIDConfig cnfUsing(gainUsing);
   

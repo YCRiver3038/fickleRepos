@@ -128,6 +128,10 @@ class FPIDController
                 IntDif = 0.0;
                 IntDifCount = 0;
             }
+            else
+            {
+                IntDifCount++;
+            }
         }
         
         uint32_t extLimited(FPIDConfig cnfEL, float aimValEL, float observedValEL, float* ctrlTargetEL, float extLim)

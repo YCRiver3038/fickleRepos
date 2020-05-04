@@ -17,7 +17,7 @@ void setup()
 	int16_t flipctr = 0;
 	uint32_t ctrlStatus = 0;
 
-	FPID_GainSet gainUsing = {60.0f, 0.1f, 4.0f, 0};
+	FPID_GainSet gainUsing = {2000.0f, 0.0f, 2000.0f, 0};
 	FPIDController ctrl;
 	FPIDConfig cnfUsing(gainUsing);
 	pinMode(vDuty, OUTPUT);
