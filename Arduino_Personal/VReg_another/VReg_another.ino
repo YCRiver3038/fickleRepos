@@ -7,7 +7,7 @@
 #define AD_Vo 2
 #define vDuty 9
 
-#define FLIPCTR_MAX (uint16_t)32000
+#define FLIPCTR_MAX (int16_t)32000
 
 void setup() 
 {
@@ -17,7 +17,7 @@ void setup()
 	int16_t flipctr = 0;
 	uint32_t ctrlStatus = 0;
 
-	FPID_GainSet gainUsing = {2000.0f, 0.0f, 2000.0f, 0};
+	FPID_GainSet gainUsing = {5.0f, 0.0004f, 1.0f, 0};
 	FPIDController ctrl;
 	FPIDConfig cnfUsing(gainUsing);
 	pinMode(vDuty, OUTPUT);
@@ -32,7 +32,7 @@ void setup()
 		{
 			flipTiming = (float)FLIPCTR_MAX;
 		}
-		flipTiming_u16 = FLIPCTR_MAX - (uint16_t)flipTiming;
+		flipTiming_u16 = FLIPCTR_MAX - (int16_t)flipTiming;
 
 		if(flipTiming_u16 < 1)
 		{
