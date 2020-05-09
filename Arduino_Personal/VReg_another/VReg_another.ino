@@ -17,18 +17,19 @@ void setup()
 	int16_t flipctr = 0;
 	uint32_t ctrlStatus = 0;
 
-	FPID_GainSet gainUsing = {5.0f, 0.0004f, 1.0f, 0};
+	FPID_GainSet gainUsing = {15.0f, 0.0005f, 3.0f, 0};
 	FPIDController ctrl;
 	FPIDConfig cnfUsing(gainUsing);
 	pinMode(vDuty, OUTPUT);
 	digitalWrite(vDuty, LOW);
-
 	flipctr = 0;
+	ADCSRA = ADCSRA & 0b11111010;
+
 	while (1) 
 	{
 		readVo = (float)(analogRead(AD_Vo)) * AD2VO_COEF;
 		ctrl.control(cnfUsing, VREG_AIM_VOLTAGE, readVo, &flipTiming);
-		if(flipTiming > (float)FLIPCTR_MAX)
+		if(flipTiming > ((float)FLIPCTR_MAX-1.0f))
 		{
 			flipTiming = (float)FLIPCTR_MAX;
 		}
