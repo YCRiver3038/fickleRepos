@@ -122,7 +122,7 @@ class FPIDController
             a2oDiff_P = a2oDiff_N;
             a2oDiff_N = aimVal - observedVal;
             IntDif += a2oDiff_N;
-            *ctrlTarget += (a2oDiff_N*cnf.PGain)+((a2oDiff_P-a2oDiff_N)*cnf.DGain)+(IntDif*cnf.IGain);
+            *ctrlTarget += (a2oDiff_N*cnf.PGain)+((a2oDiff_N-a2oDiff_P)*cnf.DGain)+(IntDif*cnf.IGain);
             if((IntDifCount >= cnf.integResetCount)&&(cnf.integResetCount != 0))
             {
                 IntDif = 0.0;
