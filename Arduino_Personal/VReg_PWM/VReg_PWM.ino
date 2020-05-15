@@ -10,11 +10,13 @@ void setup() {
   float readVo = 0.0;
   float duty = 0.0;
 
-  FPID_GainSet gainUsing = {0.001f, 0.0f, 0.0f, 0};
+  FPID_GainSet gainUsing = {0.01f, 0.0001f, 0.01f, 0};
   FPIDController ctrl;
   FPIDConfig cnfUsing(gainUsing);
   
   TCCR1B = (TCCR1B & 0b11111000) | 0x01;
+  ADCSRA = ADCSRA & 0b11111010;
+
   pinMode(vDuty, OUTPUT);
 
   while (1) {
