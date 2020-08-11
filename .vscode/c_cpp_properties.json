@@ -6,11 +6,14 @@
                 "/home/ycriver/.arduino15/packages/arduino/tools/**",
                 "/home/ycriver/.arduino15/packages/arduino/hardware/avr/1.8.2/**",
                 "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\**",
-                "C:\\Program Files (x86)\\Arduino\\tools\\**"
+                "C:\\Program Files (x86)\\Arduino\\tools\\**",
+                "C:\\Users\\yuuki\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.3\\**",
+                "C:\\Users\\yuuki\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\**"
             ],
             "forcedInclude": [
                 "/home/ycriver/.arduino15/packages/arduino/hardware/avr/1.8.2/cores/arduino/Arduino.h",
-                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h"
+                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h",
+                "C:\\Users\\yuuki\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.3\\cores\\arduino\\Arduino.h"
             ],
             "intelliSenseMode": "gcc-x64",
             "compilerPath": "/usr/bin/gcc",
