@@ -1,0 +1,15 @@
+0E 86	|	LD	C, 0x86
+CB 31	|	SWAP	C
+0D	|	DEC	C
+50	|	LD	D, B
+CB 31	|	SWAP	C
+06 D2	|	LD	B, 0xD2
+C5	|	PUSH	BC
+50	|	LD	D, B
+E1	|	POP	HL
+3E 32	|	LD	A, 0x32
+C6 32	|	ADD	A, 0x32
+50	|	LD	D, B
+32	|	LD	(HL-), A
+C9	|	RET
+50	|	LD	D, B

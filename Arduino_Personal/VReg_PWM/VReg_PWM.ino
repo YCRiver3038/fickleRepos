@@ -1,7 +1,7 @@
 #include "FakePID.h"
 
 #define VREG_AIM_VOLTAGE 13.85f
-#define AD2VO_COEF 0.0244f
+#define AD2VO_COEF 0.0241f
 
 #define AD_Vo 2
 #define vDuty 9

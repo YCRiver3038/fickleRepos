@@ -2,7 +2,8 @@
 
 #define VREG_AIM_VOLTAGE 13.85f
 #define VREG_LIMIT_VOLTAGE 13.9
-#define AD2VO_COEF 0.0244f
+#define AD2VO_COEF 0.0241f
+#define AD2VO_OFFS (51.0174f)
 
 #define AD_Vo 2
 #define vDuty 9
@@ -16,18 +17,28 @@ void setup()
 	int16_t flipTiming_u16 = 0;
 	int16_t flipctr = 0;
 	uint32_t ctrlStatus = 0;
+  uint8_t printctr = 0;
 
-	FPID_GainSet gainUsing = {1.0f, 0.00002f, 0.02f, 0};
+	FPID_GainSet gainUsing = {2.0f, 0.00002f, 0.04f, 0};
 	FPIDController ctrl;
 	FPIDConfig cnfUsing(gainUsing);
 	pinMode(vDuty, OUTPUT);
 	digitalWrite(vDuty, LOW);
 	flipctr = 0;
 	ADCSRA = ADCSRA & 0b11111010;
+  //Serial.begin(115200);
 
 	while (1) 
 	{
 		readVo = (float)(analogRead(AD_Vo)) * AD2VO_COEF;
+    /*
+    if(printctr == 0)
+    {
+      Serial.println(readVo);
+    }
+    printctr++;
+    printctr%250;
+    */
 		ctrl.control(cnfUsing, VREG_AIM_VOLTAGE, readVo, &flipTiming);
 		if(flipTiming > ((float)FLIPCTR_MAX-1.0f))
 		{
