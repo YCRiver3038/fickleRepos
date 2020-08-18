@@ -138,13 +138,6 @@ def CreateWindow(wsize, wtype, *, ckbeta=14):
 		window_array = DChebWindow(wsize) 
 	return window_array
 
-def MOVAVR(points, target, wtype, *, kbeta=14):
-	calced_array = np.zeros(np.shape(target)[0])
-	Window = CreateWindow(points, wtype, ckbeta=kbeta)
-	calced_array = np.convolve(target, Window, mode='same')
-	return calced_array
-	import struct
-
 RATE=48000
 p=pyaudio.PyAudio()
 N=4
@@ -173,7 +166,7 @@ form_shift = 1.35
 pshift_zone = 3
 
 iterator = np.arange(0, CHUNK, 1)
-xfreq = iterator[:int((len(iterator)/2)+1)]*fftres
+xfreq = np.fft.fftfreq(CHUNK, 1/RATE)
 fftarray = np.zeros(int((CHUNK/2)+1))
 fftarray_windowed = np.zeros(int((CHUNK/2)+1))
 print('done')

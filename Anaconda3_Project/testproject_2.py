@@ -1,3 +1,5 @@
+#ref：https://wiki.qt.io/Qt_for_Python
+
 import sys
 from PySide2.QtWidgets import QApplication, QLabel
                                                       
