@@ -21,7 +21,7 @@ void setup() {
 	FPID_GainSet gainUsing = {0.8f, 0.00001f, 1.0f, 0};
 	FPIDController ctrl;
 	FPIDConfig cnfUsing(gainUsing);
-	Serial.begin(115200);
+	//Serial.begin(115200);
 
 	TCCR1B = (TCCR1B & 0b11111000) | 0x01;
 	ADCSRA = ADCSRA & 0b11111010;
@@ -41,13 +41,14 @@ void setup() {
 		//Serial.println(AVGCtr);
 
 		readVo = (float)VAvg * AD2VO_COEF;
+		/*
 		if(printctr == 0)
 		{
 			Serial.println(readVo);
 		}
 		printctr++;
 		printctr%250;
-		
+		*/
 		ctrl.control(cnfUsing, VREG_AIM_VOLTAGE, readVo, &duty);
 		if (duty >= 255.0f)
 		{

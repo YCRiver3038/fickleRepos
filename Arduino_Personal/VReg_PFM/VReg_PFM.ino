@@ -34,7 +34,7 @@ void setup()
 	digitalWrite(vDuty, LOW);
 	flipctr = 0;
 	ADCSRA = ADCSRA & 0b11111010;
-	Serial.begin(115200);
+	//Serial.begin(115200);
 
 	AVGCtr = 0;
 	while (1) 
