@@ -245,7 +245,7 @@ def AudioThr():
 		write_buffer[1:buffer_size:2] = ifftarray_R.real
 
 		write_buffer=write_buffer*MVol
-		output = stream.write(write_buffer.astype(np.float32), num_frames=CHUNK)
+		stream.write(write_buffer.astype(np.float32), num_frames=CHUNK)
 
 debug_enabled = True
 
