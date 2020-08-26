@@ -145,7 +145,6 @@ stream=p.open(  format = pyaudio.paFloat32,
 		input_device_index=idev,
 		output_device_index=odev )
 
-terminate_req = False
 def AudioThr():
 	buffer_size = CHUNK*n_channel
 	write_buffer = np.zeros(buffer_size)
@@ -163,7 +162,8 @@ def AudioThr():
 
 	ifftarray_L = (np.zeros(CHUNK)).astype(complex)
 	ifftarray_R = (np.zeros(CHUNK)).astype(complex)
-
+	itr1 = np.arange(0, CHUNK, 1)
+	half_len = int(CHUNK/2)
 	while stream.is_active():
 		try:
 			input_data_cur = stream.read(CHUNK)
@@ -175,12 +175,12 @@ def AudioThr():
 		input_array_cur = np.frombuffer(input_data_cur, dtype=np.float32)
 
 		length = len(input_array_prev)
-		input_array_prev_L = input_array_prev[0:length:2]*window
-		input_array_prev_R = input_array_prev[1:length:2]*window
+		input_array_prev_L = input_array_prev[0:length:2]
+		input_array_prev_R = input_array_prev[1:length:2]
 
 		length2 = len(input_array_cur)
-		input_array_cur_L = input_array_cur[0:length2:2]*window
-		input_array_cur_R = input_array_cur[1:length2:2]*window
+		input_array_cur_L = input_array_cur[0:length2:2]
+		input_array_cur_R = input_array_cur[1:length2:2]
 
 		merged_array_L[len(input_array_cur_L):] = input_array_cur_L
 		merged_array_L[:len(input_array_cur_L)] = input_array_prev_L
@@ -189,25 +189,18 @@ def AudioThr():
 		merged_array_R[:len(input_array_cur_R)] = input_array_prev_R
 		
 		#Lch manipulation
-		fftarray_prev_L = np.fft.fft(input_array_prev_L)
-		fftarray_prev_L = fftarray_prev_L*GainSet_L#gain manipulation
-		ifftarray_prev_L = (np.fft.ifft(fftarray_prev_L))
-
-		fftarray_cur_L = np.fft.fft(input_array_cur_L)
-		fftarray_cur_L = fftarray_cur_L*GainSet_L#gain manipulation
-		ifftarray_cur_L = (np.fft.ifft(fftarray_cur_L))
-
+		for ctr in itr1:
+			looking_array_L = np.copy(merged_array_L[ctr:(ctr+CHUNK)]*window)
+			fftarray_looking_L = np.fft.fft(looking_array_L)*GainSet_L
+			ifftarray_temp_L = np.fft.ifft(fftarray_looking_L)
+			ifftarray_L[ctr] = ifftarray_temp_L[half_len]
+		
 		#Rch manipulation
-		fftarray_prev_R = np.fft.fft(input_array_prev_R)
-		fftarray_prev_R = fftarray_prev_R*GainSet_R#gain_manipulation
-		ifftarray_prev_R = (np.fft.ifft(fftarray_prev_R))
-
-		fftarray_cur_R = np.fft.fft(input_array_cur_R)
-		fftarray_cur_R = fftarray_cur_R*GainSet_R#gain_manipulation
-		ifftarray_cur_R = (np.fft.ifft(fftarray_cur_R))
-
-		ifftarray_L = ifftarray_L
-		ifftarray_R = ifftarray_R
+		for ctr in itr1:
+			looking_array_R = np.copy(merged_array_R[ctr:(ctr+CHUNK)]*window)
+			fftarray_looking_R = np.fft.fft(looking_array_R)*GainSet_R
+			ifftarray_temp_R = np.fft.ifft(fftarray_looking_R)
+			ifftarray_R[ctr] = ifftarray_temp_R[half_len]
 
 		write_buffer[0:buffer_size:2] = ifftarray_L.real
 		write_buffer[1:buffer_size:2] = ifftarray_R.real
