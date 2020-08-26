@@ -1,13 +1,14 @@
 #include "math.h"
 #include "L1972ctrlDefs.h"
 
-//#define USING_SERIAL
+#define USING_SERIAL
 
 #define SS 10
 #define MUTE_UNMUTE 6
 #define ENC_UP 5
 #define ENC_DOWN 8
 #define CS_7SEG 3
+
 #define DIGITS 4
 #define CHARS 37
 
@@ -83,7 +84,7 @@ void showAtten(uint8_t attArg)
 	{
 		Serial.print(attArg);
 		Serial.print(" : ");
-		Serial.print(attArg);
+		Serial.print(attLv);
 		Serial.print("dB\r\n");
 	}
 	else

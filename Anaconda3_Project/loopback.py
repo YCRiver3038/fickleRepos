@@ -165,10 +165,28 @@ def AudioThr():
 		try:
 			input_data_cur = stream.read(CHUNK)
 		except OSError:
-			print("retry:")
-			input_data_cur = stream.read(CHUNK)
-
-
+			try:
+				print("retry:")
+				input_data_cur = stream.read(CHUNK)
+			except OSError:
+				try:
+					print("retry:")
+					input_data_cur = stream.read(CHUNK)
+				except OSError:
+					try:
+						print("retry:")
+						input_data_cur = stream.read(CHUNK)
+					except OSError:
+						try:
+							print("retry:")
+							input_data_cur = stream.read(CHUNK)
+						except OSError:
+							try:
+								print("retry:")
+								input_data_cur = stream.read(CHUNK)
+							except OSError:
+								print("exiting")
+								exit()
 
 		input_array_prev = input_array_cur
 		input_array_cur = np.frombuffer(input_data_cur, dtype=np.float32)

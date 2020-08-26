@@ -25,7 +25,7 @@ void setup()
 	uint8_t tempctr = 0;
 	uint16_t VRaw[AVG_SIZE] = {0};
 
-	FPID_GainSet gainUsing = {1.2f, 0.00003f, 0.01f, 0};
+	FPID_GainSet gainUsing = {0.8f, 0.0003f, 0.1f, 200};
 	FPIDController ctrl;
 	FPIDConfig cnfUsing(gainUsing);
 
