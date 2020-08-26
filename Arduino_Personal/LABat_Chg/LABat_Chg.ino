@@ -13,11 +13,9 @@
 #define BULK_CHARGE_EXIT_COUNT 3000L
 #define BULK_CHARGE_EXIT_RATIO 0.30f
 
-
 //CC：青LED
 //CV：緑LED
 //Float：白LED
-
 
 #define BAT_VOLT_LIM_BULK 14.5f
 #define BAT_VOLT_LIM_FLOAT 13.85f
