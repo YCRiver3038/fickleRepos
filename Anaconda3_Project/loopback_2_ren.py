@@ -6,101 +6,13 @@ import numpy as np
 from scipy import signal
 import math
 import threading
+import windowfuncs as wfc
 
-def GaussianWindow(wsize):
-	"""
-	参考サイト：http://www.eng.kagawa-u.ac.jp/~tishii/Lab/Etc/gauss.html
-	"""
-	warray = np.zeros(wsize)
-	iterator1 = np.arange(0,wsize,1)
-	sigma = np.std(iterator1)
-	for i in iterator1:
-		warray[i] = (1/(math.sqrt(2*math.pi)*sigma))*math.exp(-1*(math.pow(i-((wsize-1)/2),2)/(2*math.pow(sigma,2))))
-	return warray
-
-def HanningWindow(wsize):
-	"""
-	http://www.fbs.osaka-u.ac.jp/labs/ishijima/FFT-06.html
-	"""
-	warray = np.zeros(wsize)
-	iterator1 = np.arange(0,wsize,1)
-	for i in iterator1:
-		warray[i] = 0.5-(0.5*math.cos(2*math.pi*(i/(wsize-1))))
-	return warray
-
-def SinWindow(wsize):
-	"""
-	参考：http://www.spcom.ecei.tohoku.ac.jp/~aito/kisosemi/slides2.pdf
-	"""
-	warray = np.zeros(wsize)
-	iterator1 = np.arange(0,wsize,1)
-	for i in iterator1:
-		warray[i] = math.sin((math.pi*(i/(wsize-1))))
-	return warray
-
-def VorbisWindow(wsize):
-	"""
-	参考：http://www.spcom.ecei.tohoku.ac.jp/~aito/kisosemi/slides2.pdf
-	"""
-	warray = np.zeros(wsize)
-	iterator1 = np.arange(0,wsize,1)
-	for i in iterator1:
-		warray[i] = math.sin( (math.pi / 2.0) * math.pow(math.sin(math.pi*(i/(wsize-1))), 2))
-	return warray
-
-def BlackmanWindow(wsize):
-	warray = np.zeros(wsize)
-	warray = signal.get_window('blackman', wsize)
-	return warray
-
-def NuttallWindow(wsize):
-	warray = np.zeros(wsize)
-	warray = signal.get_window('nuttall', wsize)
-	return warray
-
-def BHWindow(wsize):#Blackman-Harris
-	warray = np.zeros(wsize)
-	warray = signal.get_window('blackmanharris', wsize)
-	return warray
-
-def KaiserWindow(wsize, *, beta=14):#Kaiser(beta=14)
-	warray = np.zeros(wsize)
-	warray = signal.get_window(('kaiser',beta), wsize)
-	return warray
-
-def DChebWindow(wsize):#Dolph-Chebyshev(100dB)
-	warray = np.zeros(wsize)
-	warray = signal.get_window(('chebwin',100.0), wsize)
-	return warray
-
-def CreateWindow(wsize, wtype, *, ckbeta=14):
-	window_array = np.zeros(wsize)
-	if(wtype==0):
-		window_array[:] = 1
-	elif (wtype == 1):
-		window_array = GaussianWindow(wsize)
-	elif (wtype == 2):
-		window_array = HanningWindow(wsize)
-	elif (wtype == 3):
-		window_array = SinWindow(wsize)
-	elif (wtype == 4):
-		window_array = VorbisWindow(wsize) 
-	elif (wtype == 5):
-		window_array = BlackmanWindow(wsize) 
-	elif (wtype == 6):
-		window_array = NuttallWindow(wsize) 
-	elif (wtype == 7):
-		window_array = BHWindow(wsize) 
-	elif (wtype == 8):
-		window_array = KaiserWindow(wsize, beta=ckbeta) 
-	elif (wtype == 9):
-		window_array = DChebWindow(wsize) 
-	return window_array
+global window
 
 def calImpulse(clength, garray):
 	impulse_array = np.zeros(clength)
 	impulse_array[int(clength/2)] = 1
-	impulse_array = impulse_array
 	fft_array = np.fft.fft(impulse_array)
 	ifft_array = (np.fft.ifft(fft_array*garray))*window
 	return ifft_array.real
@@ -113,7 +25,7 @@ GainSet_L = np.ones(CHUNK)
 GainSet_R = np.ones(CHUNK)
 fftres = RATE/CHUNK
 xfreq = np.fft.fftfreq(CHUNK, d=(1/RATE))
-window = CreateWindow(CHUNK, 0)
+window = wfc.CreateWindow(CHUNK, 0)
 pregain_arr = np.zeros(CHUNK)
 id20k = np.where(abs(xfreq)>20000)
 
@@ -180,15 +92,13 @@ def AudioThr():
 
 		input_array_cur = np.frombuffer(input_data_cur, dtype=np.float32)
 		length2 = len(input_array_cur)
-		
+
 		"""
 		conbined_array_L[:CHUNK] = conbined_array_L[CHUNK:]
 		conbined_array_R[:CHUNK] = conbined_array_R[CHUNK:]
 		conbined_array_L[CHUNK:] = input_array_cur[0:length2:2]
 		conbined_array_R[CHUNK:] = input_array_cur[1:length2:2]
-		"""
 
-		"""
 		for ctr in itr1:
 			temparray_L = np.convolve(conbined_array_L[ctr:(ctr+halfLength)], impulse_array_L[:halfLength], mode="same")
 			temparray_R = np.convolve(conbined_array_R[ctr:(ctr+halfLength)], impulse_array_R[:halfLength], mode="same")
@@ -200,7 +110,6 @@ def AudioThr():
 		output_array_R = np.convolve(input_array_cur[1:length2:2], impulse_array_R, mode="same")
 		write_buffer[0:buffer_size:2] = output_array_L*MVol
 		write_buffer[1:buffer_size:2] = output_array_R*MVol
-
 		stream.write(write_buffer.astype(np.float32), num_frames=CHUNK)
 
 debug_enabled = False
@@ -239,9 +148,9 @@ if __name__ == '__main__':
 				wnum = int(input("window?"))
 				if(wnum==8):
 					beta_1 = float(input("beta?"))
-					window = CreateWindow(CHUNK, wnum, ckbeta=beta_1)
+					window = wfc.CreateWindow(CHUNK, wnum, ckbeta=beta_1)
 				else:
-					window = CreateWindow(CHUNK, wnum)
+					window = wfc.CreateWindow(CHUNK, wnum)
 
 			if(str=="20kcut"):
 				GainSet_L[id20k] = 0
