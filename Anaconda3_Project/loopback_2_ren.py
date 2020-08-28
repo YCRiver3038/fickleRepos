@@ -97,7 +97,15 @@ def CreateWindow(wsize, wtype, *, ckbeta=14):
 		window_array = DChebWindow(wsize) 
 	return window_array
 
-RATE=96000
+def calImpulse(clength, garray):
+	impulse_array = np.zeros(clength)
+	impulse_array[int(clength/2)] = 1
+	impulse_array = impulse_array
+	fft_array = np.fft.fft(impulse_array)
+	ifft_array = (np.fft.ifft(fft_array*garray))*window
+	return ifft_array.real
+
+RATE=48000
 p=pyaudio.PyAudio()
 
 CHUNK=int(input("Buffer size?："))
@@ -107,9 +115,6 @@ fftres = RATE/CHUNK
 xfreq = np.fft.fftfreq(CHUNK, d=(1/RATE))
 window = CreateWindow(CHUNK, 0)
 pregain_arr = np.zeros(CHUNK)
-gain1 = 1/((window[:int(CHUNK/2)]+window[int(CHUNK/2):]))
-pregain_arr[:int(CHUNK/2)] = gain1
-pregain_arr[int(CHUNK/2):] = gain1
 id20k = np.where(abs(xfreq)>20000)
 
 print('FFT Resolution:%6.4f[Hz]'%(fftres))
@@ -134,6 +139,8 @@ except ValueError:
 	odev=4
 print()
 
+impulse_array_L = calImpulse(CHUNK, GainSet_L)
+impulse_array_R = calImpulse(CHUNK, GainSet_R)
 MVol = 1
 n_channel=2
 stream=p.open(  format = pyaudio.paFloat32,
@@ -148,65 +155,55 @@ stream=p.open(  format = pyaudio.paFloat32,
 def AudioThr():
 	buffer_size = CHUNK*n_channel
 	write_buffer = np.zeros(buffer_size)
+	halfLength = int(CHUNK/2)+1
+	itr1 = np.arange(0, CHUNK, 1)
 
 	input_data_cur = np.zeros(buffer_size)
-
-	input_array_prev = np.zeros(buffer_size)
 	input_array_cur = np.zeros(buffer_size)
 
-	merged_array_L=np.zeros(CHUNK*2)
-	merged_array_R=np.zeros(CHUNK*2)
+	output_array_L = np.zeros(CHUNK)
+	output_array_R = np.zeros(CHUNK)
+	conbined_array_L = np.zeros(CHUNK*2)
+	conbined_array_R = np.zeros(CHUNK*2)
 
-	looking_array_L=np.zeros(CHUNK)
-	looking_array_R=np.zeros(CHUNK)
 
-	ifftarray_L = (np.zeros(CHUNK)).astype(complex)
-	ifftarray_R = (np.zeros(CHUNK)).astype(complex)
-	itr1 = np.arange(0, CHUNK, 1)
-	half_len = int(CHUNK/2)
 	while stream.is_active():
 		try:
 			input_data_cur = stream.read(CHUNK)
 		except OSError:
-			print("retry:")
-			input_data_cur = stream.read(CHUNK)
+			try:
+				print("retry:")
+				input_data_cur = stream.read(CHUNK)
+			except OSError:
+				print("exiting")
+				exit()
 
-		input_array_prev = input_array_cur
 		input_array_cur = np.frombuffer(input_data_cur, dtype=np.float32)
-
-		length = len(input_array_prev)
-		input_array_prev_L = input_array_prev[0:length:2]
-		input_array_prev_R = input_array_prev[1:length:2]
-
 		length2 = len(input_array_cur)
-		input_array_cur_L = input_array_cur[0:length2:2]
-		input_array_cur_R = input_array_cur[1:length2:2]
-
-		merged_array_L[CHUNK:] = input_array_cur_L
-		merged_array_L[:CHUNK] = input_array_prev_L
-
-		merged_array_R[CHUNK:] = input_array_cur_R
-		merged_array_R[:CHUNK] = input_array_prev_R
 		
-		#ch manipulation
+		"""
+		conbined_array_L[:CHUNK] = conbined_array_L[CHUNK:]
+		conbined_array_R[:CHUNK] = conbined_array_R[CHUNK:]
+		conbined_array_L[CHUNK:] = input_array_cur[0:length2:2]
+		conbined_array_R[CHUNK:] = input_array_cur[1:length2:2]
+		"""
+
+		"""
 		for ctr in itr1:
-			looking_array_L = np.copy(merged_array_L[ctr:(ctr+CHUNK)]*window)
-			looking_array_R = np.copy(merged_array_R[ctr:(ctr+CHUNK)]*window)
-			fftarray_looking_L = np.fft.fft(looking_array_L)*GainSet_L
-			fftarray_looking_R = np.fft.fft(looking_array_R)*GainSet_R
-			ifftarray_temp_L = np.fft.ifft(fftarray_looking_L)
-			ifftarray_temp_R = np.fft.ifft(fftarray_looking_R)
-			ifftarray_L[ctr] = ifftarray_temp_L[half_len]
-			ifftarray_R[ctr] = ifftarray_temp_R[half_len]
+			temparray_L = np.convolve(conbined_array_L[ctr:(ctr+halfLength)], impulse_array_L[:halfLength], mode="same")
+			temparray_R = np.convolve(conbined_array_R[ctr:(ctr+halfLength)], impulse_array_R[:halfLength], mode="same")
+			output_array_L[ctr] = temparray_L[halfLength-1]
+			output_array_R[ctr] = temparray_R[halfLength-1]
+		"""
 
-		write_buffer[0:buffer_size:2] = ifftarray_L.real
-		write_buffer[1:buffer_size:2] = ifftarray_R.real
-		write_buffer=write_buffer*MVol
-		
+		output_array_L = np.convolve(input_array_cur[0:length2:2], impulse_array_L, mode="same")
+		output_array_R = np.convolve(input_array_cur[1:length2:2], impulse_array_R, mode="same")
+		write_buffer[0:buffer_size:2] = output_array_L*MVol
+		write_buffer[1:buffer_size:2] = output_array_R*MVol
+
 		stream.write(write_buffer.astype(np.float32), num_frames=CHUNK)
 
-debug_enabled = True
-
+debug_enabled = False
 if __name__ == '__main__':
 	thr1 = threading.Thread(target=AudioThr)
 	thr1.setDaemon(True)
@@ -246,15 +243,6 @@ if __name__ == '__main__':
 				else:
 					window = CreateWindow(CHUNK, wnum)
 
-				gain1 = 1/((window[:int(CHUNK/2)]+window[int(CHUNK/2):]))
-				pregain_arr[:int(CHUNK/2)] = gain1
-				pregain_arr[int(CHUNK/2):] = gain1
-				if debug_enabled:
-					print("---DEBUG---")
-					print("gain:")
-					print(pregain_arr)
-					print("---DEBUG---")
-
 			if(str=="20kcut"):
 				GainSet_L[id20k] = 0
 				GainSet_R[id20k] = 0
@@ -271,6 +259,8 @@ if __name__ == '__main__':
 				GainSet_R = np.ones(CHUNK)
 				GainSet_L[idNFreq] = 0
 				GainSet_R[idNFreq] = 0
+				impulse_array_L = calImpulse(CHUNK, GainSet_L)
+				impulse_array_R = calImpulse(CHUNK, GainSet_R)
 				if debug_enabled:
 					print("---DEBUG---")
 					print("gainset:")
@@ -280,6 +270,9 @@ if __name__ == '__main__':
 			if(str=="grecover"):
 				GainSet_L= np.ones(CHUNK)
 				GainSet_R = np.ones(CHUNK)
+				impulse_array_L = calImpulse(CHUNK, GainSet_L)
+				impulse_array_R = calImpulse(CHUNK, GainSet_R)
+
 				if debug_enabled:
 					print("---DEBUG---")
 					print("gainset:")
