@@ -9,7 +9,7 @@ typedef uint8_t RB_TYPE;
 typedef uint8_t RET_TYPE;
 typedef uint16_t INDEX_TYPE;
 
-#define RB_CREATE_FAILURE (~((RET_TYPE)0x0))
+#define RB_CREATE_FAILURE (~(RET_TYPE)0x0))
 #define RB_CREATE_SUCCESS ((RET_TYPE)0x0)
 #define RB_FULL (~((RET_TYPE)0x0)-(RET_TYPE)1)
 #define RB_ACCEPTABLE ((RET_TYPE)0x1)
@@ -60,11 +60,7 @@ class ringBuf
 		{
 			bufLength = length;
 			bufDest = (RB_TYPE*)calloc(length, sizeof(RB_TYPE));
-			if(bufDest == nullptr)
-			{
-				return RB_CREATE_FAILURE;
-			}
-			return RB_CREATE_SUCCESS;
+			return bufDest ? RB_CREATE_SUCCESS : RB_CREATE_FAILURE
 		}
 		
 		RET_TYPE write(RB_TYPE data)
