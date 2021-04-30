@@ -60,7 +60,7 @@ class ringBuf
 		{
 			bufLength = length;
 			bufDest = (RB_TYPE*)calloc(length, sizeof(RB_TYPE));
-			return bufDest ? RB_CREATE_SUCCESS : RB_CREATE_FAILURE
+			return bufDest ? RB_CREATE_SUCCESS : RB_CREATE_FAILURE;
 		}
 		
 		RET_TYPE write(RB_TYPE data)
