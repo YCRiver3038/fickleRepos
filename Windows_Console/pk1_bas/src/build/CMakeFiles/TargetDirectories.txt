@@ -1,4 +1,0 @@
-/Users/ichikawayuuki/temp/fickleRepos/Windows_Console/pk1_bas/src/build/CMakeFiles/rebuild_cache.dir
-/Users/ichikawayuuki/temp/fickleRepos/Windows_Console/pk1_bas/src/build/CMakeFiles/edit_cache.dir
-/Users/ichikawayuuki/temp/fickleRepos/Windows_Console/pk1_bas/src/build/CMakeFiles/dispChars.dir
-/Users/ichikawayuuki/temp/fickleRepos/Windows_Console/pk1_bas/src/build/CMakeFiles/pk1_bas.dir
