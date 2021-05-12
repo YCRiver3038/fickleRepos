@@ -1,14 +1,6 @@
 #ifndef MODS_H_INCLUDED
 #define MODS_H_INCLUDED
 
-extern unsigned int code;
-extern unsigned int Expl;
-extern unsigned int Spls;
-extern int find;
-extern int Ctr;
-extern char mode[];
-extern int isFound;
-
 extern int bExit();
 extern void vError();
 extern int vInfo(int);
