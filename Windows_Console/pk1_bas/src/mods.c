@@ -11,12 +11,6 @@
 #define LF_SKIL 3
 #define LF_PNAM 4
 
-unsigned int code = 0;
-unsigned int Expl = 0;
-unsigned int Spls = 0;
-int find = 0;
-int Ctr = 0;
-char mode[24] = { 0 };
 int isFound = FOUND;
 
 int bExit() {
@@ -48,7 +42,7 @@ int vInfo(int fSpls) {
 
 	printf("\n文字：%s\n", Chl[fSpls]);
 
-	if (Spls > 200) { 
+	if (fSpls > 200) { 
 		printf("\nトレーナー名：%s\n", pNum[fSpls]); 
 	}
 	else { 
@@ -75,6 +69,8 @@ int judgeExceptNumber(int SourceNumber[], int TargetNumber, int numSourceMember)
 }
 
 int code1BtoChar() {
+	unsigned int code = 0;
+
 	printf("\n値を入力してください。(16進数)\n注：下2桁以外は無視されます。\n");
 	while (scanf("%x", &code) == EOF) {
 		fseek(stdin, (long)0, SEEK_SET);
@@ -109,6 +105,7 @@ int code1BtoChar() {
 }
 
 int mbToAsm(int codeLength, int inCodeINT_F[]) {
+	int Ctr = 0;
 	FILE *outAsm = NULL;
 	int isOpen = 1;
 	outAsm = fopen("AsmOut.txt", "w");
@@ -349,6 +346,8 @@ int mbToAsm(int codeLength, int inCodeINT_F[]) {
 }
 
 int codeToInfo(char Data[CNUM][TNLENG], int Length, int Code_F[], int lfMode) {
+	int Ctr = 0;
+
 	int nStrLength = 0;
 	int isOpenedCTI = 0;
 	FILE *outFileChar = NULL;
@@ -442,6 +441,8 @@ int codeToInfo(char Data[CNUM][TNLENG], int Length, int Code_F[], int lfMode) {
 }
 
 int readMbCode() {
+	int Ctr = 0;
+
 	char inCode[ (CODEMAX * 2) + 1 ] = {0};
 	char tempCode[3] = {0};
 	int inCodeINT[CODEMAX] = { 0 };
@@ -539,6 +540,9 @@ int CV_Code() {
 }
 
 int Spls10() {
+	unsigned int Spls = 0;
+	unsigned int Expl = 0;
+
 	printf("\n数値を入力してください。(10進数)\n");
 	scanf("%d", &Expl);
 	fseek(stdin, (long)0, SEEK_SET);
@@ -554,6 +558,9 @@ int Spls10() {
 }
 
 int Spls16() {
+	unsigned int Expl = 0;
+	unsigned int Spls = 0;
+
 	printf("\n数値を入力してください。(16進数)\n");
 	while (scanf("%x", &Expl) == EOF) {
 		fseek(stdin, (long)0, SEEK_SET);
@@ -571,6 +578,8 @@ int Spls16() {
 }
 
 int codeComp(char compStr[CNUM][TNLENG], char findString[]) {
+	int Ctr = 0;
+
 	Ctr = 0;
 
 	while (strcmp(findString, compStr[Ctr]) != 0) { 
@@ -592,6 +601,8 @@ int codeComp(char compStr[CNUM][TNLENG], char findString[]) {
 }
 
 int CodeFind() {
+	int Ctr = 0;
+
 	int SetCtr = 0;
 	int findl = 0;
 	int condContinue = 1;
